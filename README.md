@@ -1,11 +1,10 @@
 # Cairn: A Hybrid Recurrent–Attention Language Model
 
-Rust implementation of **Cairn**, a decoder-only language model combining recurrent sequence processing, periodic attention, and sparse mixture-of-experts feed-forward layers. This repository contains the current implementation, controlled-study configurations, and stored implementation-validation records. **Work in progress.**
+Rust implementation of **Cairn**, a decoder-only language model combining recurrent sequence processing, periodic attention, and sparse mixture-of-experts feed-forward layers. This repository contains the current implementation, controlled-study configurations, and stored implementation-validation records.
 
 [![Repository](https://img.shields.io/badge/Repository-GitHub-76B900?logo=github)](https://github.com/skethz/Cairn)
 [![Code](https://img.shields.io/badge/Code-Rust-76B900?logo=rust)](#implementation)
 [![Results](https://img.shields.io/badge/Results-Validation_records-76B900)](#results)
-[![Status](https://img.shields.io/badge/Status-Work_in_progress-76B900)](#release-status)
 
 > **Architecture:** Cairn alternates Gated DeltaNet recurrent blocks with Multi-head Latent Attention (MLA) blocks to combine a compact recurrent state with direct access to earlier tokens. Sparse mixture-of-experts (MoE) layers route each token to selected experts and a shared expert. In the 1.320B-parameter study configuration, 24 blocks follow a three-recurrent/one-attention pattern; the first and last blocks use dense feed-forward layers. The remaining blocks select two of 16 routed experts per token. The Rust runtime uses LibTorch/CUDA, with native C++ and CUDA helpers for selected operations.
 
