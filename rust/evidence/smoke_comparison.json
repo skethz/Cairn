@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "checkpoints": [
+    {
+      "step": 1,
+      "file": "model",
+      "tensors": 96,
+      "unequal": []
+    },
+    {
+      "step": 1,
+      "file": "optimizer",
+      "tensors": 290,
+      "unequal": []
+    },
+    {
+      "step": 2,
+      "file": "model",
+      "tensors": 96,
+      "unequal": []
+    },
+    {
+      "step": 2,
+      "file": "optimizer",
+      "tensors": 290,
+      "unequal": []
+    }
+  ],
+  "training_metrics_equal": true,
+  "valid_tokens": 400,
+  "coverage": "real corpus slice, BF16, two microbatches, partial final-token budget, validation/test, model+optimizer+CPU/CUDA RNG checkpoints"
+}

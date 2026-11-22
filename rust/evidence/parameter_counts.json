@@ -1,0 +1,62 @@
+[
+  {
+    "config": "cairn_1p3b.json",
+    "parameters": 1320163008,
+    "matches_python": true
+  },
+  {
+    "config": "cairn_400m.json",
+    "parameters": 385379616,
+    "matches_python": true
+  },
+  {
+    "config": "dense_gqa_1p3b.json",
+    "parameters": 1298237440,
+    "matches_python": true
+  },
+  {
+    "config": "dense_gqa_400m.json",
+    "parameters": 392741888,
+    "matches_python": true
+  },
+  {
+    "config": "full_mla_1p3b.json",
+    "parameters": 1302033408,
+    "matches_python": true
+  },
+  {
+    "config": "full_mla_400m.json",
+    "parameters": 378600192,
+    "matches_python": true
+  },
+  {
+    "config": "gdn_gqa_1p3b.json",
+    "parameters": 1322814144,
+    "matches_python": true
+  },
+  {
+    "config": "gdn_gqa_400m.json",
+    "parameters": 386361120,
+    "matches_python": true
+  },
+  {
+    "config": "gdn_h_recipe_proxy_1p3b.json",
+    "parameters": 1313871552,
+    "matches_python": true
+  },
+  {
+    "config": "gdn_h_recipe_proxy_400m.json",
+    "parameters": 383020320,
+    "matches_python": true
+  },
+  {
+    "config": "kda_mla_operator_1p3b.json",
+    "parameters": 1329323136,
+    "matches_python": true
+  },
+  {
+    "config": "kda_mla_operator_400m.json",
+    "parameters": 388816896,
+    "matches_python": true
+  }
+]

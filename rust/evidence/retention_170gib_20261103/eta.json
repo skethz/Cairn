@@ -1,0 +1,126 @@
+{
+  "as_of_utc": "2026-11-03T01:26:27.574375+00:00",
+  "timezone": "Europe/Zurich",
+  "valid_token_budget_per_model": 1000000000,
+  "method": "Pool last up to 200 prior Rust updates, adjusted by measured retention speedup, with up to 200 new updates. Exclude first two warmup updates per regime. Add a stated 10% allowance for periodic validation/checkpoint overhead. Planning ranges are not statistical confidence intervals.",
+  "limitations": "Final held-out evaluation/benchmarks and queue handoff evaluation time are unmeasured and excluded. Queued models have only 10 measured updates. Future host contention and batch distribution may change throughput.",
+  "active": [
+    {
+      "family": "cairn",
+      "gpu": 4,
+      "valid_tokens": 46709249,
+      "remaining_tokens": 953290751,
+      "progress_fraction": 0.046709249,
+      "old_updates": 200,
+      "new_updates": 190,
+      "predicted_training_tokens_per_second": 9149.844068296075,
+      "recent_observed_wall_throughput": {
+        "seconds": 307.706259,
+        "valid_tokens": 2778275,
+        "tokens_per_second": 9028.984360048393
+      },
+      "training_hours_remaining": 31.834781320161,
+      "planning_range_hours": [
+        27.059564122136848,
+        36.609998518185144
+      ],
+      "estimated_training_finish_local": "2026-11-04T10:16:32.787128+01:00"
+    },
+    {
+      "family": "gdn_h_recipe_proxy",
+      "gpu": 5,
+      "valid_tokens": 61862063,
+      "remaining_tokens": 938137937,
+      "progress_fraction": 0.061862063,
+      "old_updates": 200,
+      "new_updates": 138,
+      "predicted_training_tokens_per_second": 9183.901723522278,
+      "recent_observed_wall_throughput": {
+        "seconds": 307.706259,
+        "valid_tokens": 2639935,
+        "tokens_per_second": 8579.399745001612
+      },
+      "training_hours_remaining": 31.212579049445495,
+      "planning_range_hours": [
+        26.53069219202867,
+        35.894465906862315
+      ],
+      "estimated_training_finish_local": "2026-11-04T09:39:12.858953+01:00"
+    },
+    {
+      "family": "kda_mla_operator",
+      "gpu": 6,
+      "valid_tokens": 22187909,
+      "remaining_tokens": 977812091,
+      "progress_fraction": 0.022187909,
+      "old_updates": 148,
+      "new_updates": 45,
+      "predicted_training_tokens_per_second": 4305.488131465124,
+      "recent_observed_wall_throughput": {
+        "seconds": 148.672624,
+        "valid_tokens": 558443,
+        "tokens_per_second": 3756.1925321234658
+      },
+      "training_hours_remaining": 69.39420283404041,
+      "planning_range_hours": [
+        58.98507240893435,
+        79.80333325914647
+      ],
+      "estimated_training_finish_local": "2026-11-05T23:50:06.704578+01:00"
+    },
+    {
+      "family": "gdn_gqa",
+      "gpu": 7,
+      "valid_tokens": 62151767,
+      "remaining_tokens": 937848233,
+      "progress_fraction": 0.062151767,
+      "old_updates": 200,
+      "new_updates": 142,
+      "predicted_training_tokens_per_second": 9372.607244337898,
+      "recent_observed_wall_throughput": {
+        "seconds": 307.706259,
+        "valid_tokens": 2727772,
+        "tokens_per_second": 8864.857051867768
+      },
+      "training_hours_remaining": 30.57470887134722,
+      "planning_range_hours": [
+        25.988502540645136,
+        35.1609152020493
+      ],
+      "estimated_training_finish_local": "2026-11-04T09:00:56.526312+01:00"
+    }
+  ],
+  "queued": [
+    {
+      "family": "dense_gqa",
+      "gpu": 5,
+      "predecessor": "gdn_h_recipe_proxy",
+      "retained_blocks": 8,
+      "profile_valid_tokens_per_second": 14361.668573461384,
+      "profile_measured_updates": 10,
+      "training_duration_hours": 21.27576987260276,
+      "training_completion_hours_from_now": 52.48834892204825,
+      "planning_range_hours_from_now": [
+        42.48751959648074,
+        62.48917824761576
+      ],
+      "estimated_training_finish_local": "2026-11-05T06:55:45.630494+01:00"
+    },
+    {
+      "family": "full_mla",
+      "gpu": 7,
+      "predecessor": "gdn_gqa",
+      "retained_blocks": 4,
+      "profile_valid_tokens_per_second": 7388.062065789844,
+      "profile_measured_updates": 10,
+      "training_duration_hours": 41.35801145613267,
+      "training_completion_hours_from_now": 71.9327203274799,
+      "planning_range_hours_from_now": [
+        57.00701113274464,
+        86.85842952221515
+      ],
+      "estimated_training_finish_local": "2026-11-06T02:22:25.367554+01:00"
+    }
+  ],
+  "all_training_completion_hours_from_now": 71.9327203274799
+}

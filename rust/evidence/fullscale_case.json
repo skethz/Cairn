@@ -1,0 +1,10 @@
+{
+  "source_checkpoint": "/scratch/hongse/mythos/cairn-training/runs/cairn_1p3b_seed17_v1/checkpoint_00000500/model.safetensors",
+  "parameters": 1320163008,
+  "tensors": 1487,
+  "shape": [
+    1,
+    65
+  ],
+  "source": "Our independently trained Cairn checkpoint; no original repository weights"
+}

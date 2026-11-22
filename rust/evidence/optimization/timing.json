@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "order": [
+    "python_a",
+    "rust_a",
+    "rust_b",
+    "python_b"
+  ],
+  "parameters": 1320163008,
+  "context_limit": 4096,
+  "microbatch": 16,
+  "accumulation": 2,
+  "checkpoint": "checkpoint_00001000",
+  "warmup_updates_per_trial": 2,
+  "measured_updates_per_implementation": 16,
+  "identical_metrics_all_10_updates_all_trials": true,
+  "differences": [],
+  "python_median_seconds": 6.984832453075796,
+  "rust_median_seconds": 5.0543612620000005,
+  "python_valid_tokens_per_second": 4984.958590542281,
+  "rust_valid_tokens_per_second": 6819.70146647311,
+  "throughput_ratio": 1.3680557907565765,
+  "time_reduction_fraction": 0.26903565866493684,
+  "python_peak_allocated_GiB": 36.67050743103027,
+  "rust_peak_allocated_GiB": 109.6895980834961,
+  "measured_valid_tokens_per_implementation": 542988,
+  "scope": "Exclusive compute on GPU4; original Python process paused but memory retained; other GPUs/CPU/storage shared. Initialization, first 2 updates, evaluation/checkpoint I/O excluded. Rust combines routing/scan kernels and retention of 8 block graphs; not a language-only speed claim."
+}

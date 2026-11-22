@@ -1,0 +1,236 @@
+{
+  "reference": "rust/evidence/optimization/release_manifest.json",
+  "matched": 37,
+  "total": 38,
+  "extra_files": [],
+  "files": [
+    {
+      "path": "rust/Cargo.lock",
+      "expected_sha256": "23362a0e11ebf29e2cbee8230d9473499f2ef4e8357d82df128997ea9ff43510",
+      "actual_sha256": "23362a0e11ebf29e2cbee8230d9473499f2ef4e8357d82df128997ea9ff43510",
+      "matches": true
+    },
+    {
+      "path": "rust/Cargo.toml",
+      "expected_sha256": "aead5a19a8ae248900941ca6bb3c2b491650763712a4919a619554ded0ed820e",
+      "actual_sha256": "aead5a19a8ae248900941ca6bb3c2b491650763712a4919a619554ded0ed820e",
+      "matches": true
+    },
+    {
+      "path": "rust/build.rs",
+      "expected_sha256": "39bde6432e8da2f8a7793ada9c446f35c1adeb250335528460169be1c5eaf579",
+      "actual_sha256": "39bde6432e8da2f8a7793ada9c446f35c1adeb250335528460169be1c5eaf579",
+      "matches": true
+    },
+    {
+      "path": "rust/build_offline.sh",
+      "expected_sha256": "2ed565224d164245054f2857ea68ae43bbeeb0c4893bb7671344e3436f452369",
+      "actual_sha256": "2ed565224d164245054f2857ea68ae43bbeeb0c4893bb7671344e3436f452369",
+      "matches": true
+    },
+    {
+      "path": "rust/configs/cairn_1p3b.json",
+      "expected_sha256": "270ff14872c618ebe1712eb9af895c3307bf18a4265a7f9f438e57614ddd32de",
+      "actual_sha256": "270ff14872c618ebe1712eb9af895c3307bf18a4265a7f9f438e57614ddd32de",
+      "matches": true
+    },
+    {
+      "path": "rust/configs/cairn_400m.json",
+      "expected_sha256": "bfcfb47d82c279255e39e4684197714e76272356b805dab44939963a4f27dc0e",
+      "actual_sha256": "bfcfb47d82c279255e39e4684197714e76272356b805dab44939963a4f27dc0e",
+      "matches": true
+    },
+    {
+      "path": "rust/configs/dense_gqa_1p3b.json",
+      "expected_sha256": "08d93158a9f40ee0cdeed6a3e012f2e7f0e64fb31de31a1e572bdad7a28401b8",
+      "actual_sha256": "08d93158a9f40ee0cdeed6a3e012f2e7f0e64fb31de31a1e572bdad7a28401b8",
+      "matches": true
+    },
+    {
+      "path": "rust/configs/dense_gqa_400m.json",
+      "expected_sha256": "53c7dac770213772162ae6261f8d105ab2cf5431cbb941be09695272d3f9d6aa",
+      "actual_sha256": "53c7dac770213772162ae6261f8d105ab2cf5431cbb941be09695272d3f9d6aa",
+      "matches": true
+    },
+    {
+      "path": "rust/configs/full_mla_1p3b.json",
+      "expected_sha256": "21123006f5a2c194c3ef751b4516ff3c41a14c2b927f0dcdbc88099e4856edc6",
+      "actual_sha256": "21123006f5a2c194c3ef751b4516ff3c41a14c2b927f0dcdbc88099e4856edc6",
+      "matches": true
+    },
+    {
+      "path": "rust/configs/full_mla_400m.json",
+      "expected_sha256": "a791f58c686b9b11e6c86b83adc9c509cc4f65372d4b6a70a6cefd805900c0ae",
+      "actual_sha256": "a791f58c686b9b11e6c86b83adc9c509cc4f65372d4b6a70a6cefd805900c0ae",
+      "matches": true
+    },
+    {
+      "path": "rust/configs/gdn_gqa_1p3b.json",
+      "expected_sha256": "9a209edb14f06ff20d9a24cb8bb80e6d1add431497c016158420b9a0355e94fa",
+      "actual_sha256": "9a209edb14f06ff20d9a24cb8bb80e6d1add431497c016158420b9a0355e94fa",
+      "matches": true
+    },
+    {
+      "path": "rust/configs/gdn_gqa_400m.json",
+      "expected_sha256": "1830a0aa3cf16699e63d3296a3b84c520692bf4d4be4f63aaf41268df7a944d7",
+      "actual_sha256": "1830a0aa3cf16699e63d3296a3b84c520692bf4d4be4f63aaf41268df7a944d7",
+      "matches": true
+    },
+    {
+      "path": "rust/configs/gdn_h_recipe_proxy_1p3b.json",
+      "expected_sha256": "4a77d5c8795036581dafdf9049caf9b05d348b727d0f199c538aef2c7f110e4e",
+      "actual_sha256": "4a77d5c8795036581dafdf9049caf9b05d348b727d0f199c538aef2c7f110e4e",
+      "matches": true
+    },
+    {
+      "path": "rust/configs/gdn_h_recipe_proxy_400m.json",
+      "expected_sha256": "af476f527fae62ff404c6b4095d0061d82427ce08c9382f65158271448223211",
+      "actual_sha256": "af476f527fae62ff404c6b4095d0061d82427ce08c9382f65158271448223211",
+      "matches": true
+    },
+    {
+      "path": "rust/configs/kda_mla_operator_1p3b.json",
+      "expected_sha256": "25ac1a72a88a08d33f8f9710a5ade8fac6c02bb78c6f5a65517f7b9f0dcec0e5",
+      "actual_sha256": "25ac1a72a88a08d33f8f9710a5ade8fac6c02bb78c6f5a65517f7b9f0dcec0e5",
+      "matches": true
+    },
+    {
+      "path": "rust/configs/kda_mla_operator_400m.json",
+      "expected_sha256": "0756058197e3f606f592a5142f00257f5269de789519eba9051ff2e95e5e6afe",
+      "actual_sha256": "0756058197e3f606f592a5142f00257f5269de789519eba9051ff2e95e5e6afe",
+      "matches": true
+    },
+    {
+      "path": "rust/configs/packed/research_114.json",
+      "expected_sha256": "4004805a412338969ce4508f0aa31f7a80f6c2e15c9fabf40845c0e3c91ca719",
+      "actual_sha256": "4004805a412338969ce4508f0aa31f7a80f6c2e15c9fabf40845c0e3c91ca719",
+      "matches": true
+    },
+    {
+      "path": "rust/configs/packed/tiny.json",
+      "expected_sha256": "026a854a5cd1689f616bde6c57adb16044c6059b900483dba96f88e7ba321b1c",
+      "actual_sha256": "026a854a5cd1689f616bde6c57adb16044c6059b900483dba96f88e7ba321b1c",
+      "matches": true
+    },
+    {
+      "path": "rust/native/bridge.cpp",
+      "expected_sha256": "ff456358c45d878205b544a001eb90b6a336e89216fa5b5837a90a1c6371a066",
+      "actual_sha256": "ff456358c45d878205b544a001eb90b6a336e89216fa5b5837a90a1c6371a066",
+      "matches": true
+    },
+    {
+      "path": "rust/native/compile_cuda.cpp",
+      "expected_sha256": "44873b9d8740549ed7a8e13df68117627804d6790834b41d681be4dd07b55d19",
+      "actual_sha256": "44873b9d8740549ed7a8e13df68117627804d6790834b41d681be4dd07b55d19",
+      "matches": true
+    },
+    {
+      "path": "rust/native/routing.cu",
+      "expected_sha256": "c7dfb1f1bbab0b772e92abaac9b2dcba9c4aa0045de90d031f6a336e25ec0ef2",
+      "actual_sha256": "c7dfb1f1bbab0b772e92abaac9b2dcba9c4aa0045de90d031f6a336e25ec0ef2",
+      "matches": true
+    },
+    {
+      "path": "rust/src/benchmarks.rs",
+      "expected_sha256": "f7e9185926200baa8af65749aa2ef95f2a447c6dd3c5fa57420ccef3ce9e2bc9",
+      "actual_sha256": "f7e9185926200baa8af65749aa2ef95f2a447c6dd3c5fa57420ccef3ce9e2bc9",
+      "matches": true
+    },
+    {
+      "path": "rust/src/bin/control.rs",
+      "expected_sha256": "391c9987cc33db77af4c6479b213abc93504f6baae18bb3cae4897cb569f44ca",
+      "actual_sha256": "ae406c6f1ff3cbc4ef6da8233469f3e9a4fdd4a3b67ec21f541e288c2d9911b0",
+      "matches": false
+    },
+    {
+      "path": "rust/src/bin/launch.rs",
+      "expected_sha256": "b3c2444b59d58ca7d5d8b3561008d86f02bad1076e28417afa81d50ff17cea88",
+      "actual_sha256": "b3c2444b59d58ca7d5d8b3561008d86f02bad1076e28417afa81d50ff17cea88",
+      "matches": true
+    },
+    {
+      "path": "rust/src/checkpoint.rs",
+      "expected_sha256": "d95221ddaf8bc7fb357885f8a0352a584956954ef8d230f34dd4560c10c2e926",
+      "actual_sha256": "d95221ddaf8bc7fb357885f8a0352a584956954ef8d230f34dd4560c10c2e926",
+      "matches": true
+    },
+    {
+      "path": "rust/src/data.rs",
+      "expected_sha256": "d9ec6cbbf0d480487a5a96a65f100beaa6c150774960bcf0f8c1a3ad0074c9b9",
+      "actual_sha256": "d9ec6cbbf0d480487a5a96a65f100beaa6c150774960bcf0f8c1a3ad0074c9b9",
+      "matches": true
+    },
+    {
+      "path": "rust/src/io.rs",
+      "expected_sha256": "7b73ed7b110621e52a8e27ce5e7b5720cd3735f666a85feb1926905c119e4269",
+      "actual_sha256": "7b73ed7b110621e52a8e27ce5e7b5720cd3735f666a85feb1926905c119e4269",
+      "matches": true
+    },
+    {
+      "path": "rust/src/isolation.rs",
+      "expected_sha256": "74c3e0709d9574964f2ee3ededf88db83a1bcdd1f4bb80ae9ed4218a86da4ff4",
+      "actual_sha256": "74c3e0709d9574964f2ee3ededf88db83a1bcdd1f4bb80ae9ed4218a86da4ff4",
+      "matches": true
+    },
+    {
+      "path": "rust/src/main.rs",
+      "expected_sha256": "44643eaef124af5af248a9eb3cdf498471db50791a9bccf0014f1c2fac306bb5",
+      "actual_sha256": "44643eaef124af5af248a9eb3cdf498471db50791a9bccf0014f1c2fac306bb5",
+      "matches": true
+    },
+    {
+      "path": "rust/src/model.rs",
+      "expected_sha256": "12026f06f132413834c7853b49dfe1a17f48f6369e3e8c63ee48b2f83bed1f7e",
+      "actual_sha256": "12026f06f132413834c7853b49dfe1a17f48f6369e3e8c63ee48b2f83bed1f7e",
+      "matches": true
+    },
+    {
+      "path": "rust/src/native.rs",
+      "expected_sha256": "94122fe28e2ce73ef667216f65771fa28bd227fe2e6b95fb0d7da3460c7c454f",
+      "actual_sha256": "94122fe28e2ce73ef667216f65771fa28bd227fe2e6b95fb0d7da3460c7c454f",
+      "matches": true
+    },
+    {
+      "path": "rust/src/optimizer.rs",
+      "expected_sha256": "85d800499e8bc1da04f5af8277502f9091da9a2d3d0bf99cfb4c068b87352b3e",
+      "actual_sha256": "85d800499e8bc1da04f5af8277502f9091da9a2d3d0bf99cfb4c068b87352b3e",
+      "matches": true
+    },
+    {
+      "path": "rust/src/packed.rs",
+      "expected_sha256": "c4b2b4f666225185c380e5017c7100f4b01781aa23c74f6e29d55233cd1b40c5",
+      "actual_sha256": "c4b2b4f666225185c380e5017c7100f4b01781aa23c74f6e29d55233cd1b40c5",
+      "matches": true
+    },
+    {
+      "path": "rust/src/prepare.rs",
+      "expected_sha256": "cd43f45ee9072869ab3bdcebd85c9cc8dc0d4e323f8fdebc9de3759a39afd1c5",
+      "actual_sha256": "cd43f45ee9072869ab3bdcebd85c9cc8dc0d4e323f8fdebc9de3759a39afd1c5",
+      "matches": true
+    },
+    {
+      "path": "rust/src/recurrence.rs",
+      "expected_sha256": "d83e26532c0cb5e149577fc59c6e74a9d62d83fefc3c9457495300c3ffbfd44a",
+      "actual_sha256": "d83e26532c0cb5e149577fc59c6e74a9d62d83fefc3c9457495300c3ffbfd44a",
+      "matches": true
+    },
+    {
+      "path": "rust/src/tokenizer.rs",
+      "expected_sha256": "d391022f0d9f55eb2c34b58571d7a8f97dc057b72be14adfce64c61c42ba461e",
+      "actual_sha256": "d391022f0d9f55eb2c34b58571d7a8f97dc057b72be14adfce64c61c42ba461e",
+      "matches": true
+    },
+    {
+      "path": "rust/src/trainer.rs",
+      "expected_sha256": "b8fb01f9facb028bdf6ae533f1cedaa8178b019f574b7eb2dff42c4c10ef39bf",
+      "actual_sha256": "b8fb01f9facb028bdf6ae533f1cedaa8178b019f574b7eb2dff42c4c10ef39bf",
+      "matches": true
+    },
+    {
+      "path": "rust/src/verification.rs",
+      "expected_sha256": "70426a4a691228a62de47e5cb2385e5668995529ef035767db9907834062736d",
+      "actual_sha256": "70426a4a691228a62de47e5cb2385e5668995529ef035767db9907834062736d",
+      "matches": true
+    }
+  ]
+}

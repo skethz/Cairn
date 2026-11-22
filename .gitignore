@@ -1,0 +1,13 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+target/
+cargo-home/
+toolchain/
+.env
+.env.*
+*.safetensors
+*.pt
+*.pth
+runs/
+data/

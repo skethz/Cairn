@@ -1,0 +1,39 @@
+{
+  "implementation": "Rust block recomputation + native LibTorch 2.11.0",
+  "device": "Cpu",
+  "threads": 8,
+  "parameters": 210472,
+  "shape": [
+    2,
+    128
+  ],
+  "warmup_updates": 2,
+  "measured_updates": 10,
+  "seconds": [
+    0.030569005,
+    0.030534206,
+    0.030616012,
+    0.030714165,
+    0.030652523,
+    0.030612043,
+    0.030566143,
+    0.030298349,
+    0.030343701,
+    0.030335429
+  ],
+  "median_seconds": 0.030567574,
+  "median_tokens_per_second": 8374.887715982957,
+  "nll": [
+    5.381057262420654,
+    5.2964019775390625,
+    5.216447830200195,
+    5.140420913696289,
+    5.067562103271484,
+    4.997635841369629,
+    4.9304327964782715,
+    4.8659515380859375,
+    4.804156303405762,
+    4.744701385498047
+  ],
+  "scope": "small-model pilot on shared host; not an isolated 1.3B GPU speed claim"
+}

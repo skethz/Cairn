@@ -1,0 +1,150 @@
+{
+  "status": "gpu4_sequential_queue_armed",
+  "verified_at": "2026-11-04T03:14:26.388236+01:00",
+  "released_gpus": {
+    "5": {
+      "gpu_uuid": "GPU-f8de50de-01cd-edf8-b1d7-4639ce40ec98",
+      "used_MiB": 0
+    },
+    "6": {
+      "gpu_uuid": "GPU-cc65ba37-3386-203c-2173-dbeb44c5bf77",
+      "used_MiB": 0
+    },
+    "7": {
+      "gpu_uuid": "GPU-0f7cbc13-0175-ed9c-689f-ab5a19c23a32",
+      "used_MiB": 0
+    }
+  },
+  "cairn": {
+    "gpu": 4,
+    "status": "running",
+    "step": 24745,
+    "valid_tokens": 785631637,
+    "worker_pid": 2239053,
+    "uninterrupted": true
+  },
+  "scheduler_pid": 3071698,
+  "queue": {
+    "gpu": 4,
+    "pid": 3071698,
+    "status": "waiting_for_predecessor",
+    "after_run": "cairn_1p3b_seed17_v1",
+    "planned": [
+      {
+        "config": "/scratch/hongse/mythos/cairn-rust/releases/20261104-v5/configs/gdn_h_recipe_proxy_1p3b.json",
+        "run": "gdn_h_recipe_proxy_1p3b_seed17_v1",
+        "resume": true,
+        "retained_blocks": 14
+      },
+      {
+        "config": "/scratch/hongse/mythos/cairn-rust/releases/20261104-v5/configs/kda_mla_operator_1p3b.json",
+        "run": "kda_mla_operator_1p3b_seed17_v1",
+        "resume": true,
+        "retained_blocks": 5
+      },
+      {
+        "config": "/scratch/hongse/mythos/cairn-rust/releases/20261104-v5/configs/gdn_gqa_1p3b.json",
+        "run": "gdn_gqa_1p3b_seed17_v1",
+        "resume": true,
+        "retained_blocks": 14
+      },
+      {
+        "config": "/scratch/hongse/mythos/cairn-rust/releases/20261104-v5/configs/dense_gqa_1p3b.json",
+        "run": "dense_gqa_1p3b_seed17_v1",
+        "resume": false,
+        "retained_blocks": 8
+      },
+      {
+        "config": "/scratch/hongse/mythos/cairn-rust/releases/20261104-v5/configs/full_mla_1p3b.json",
+        "run": "full_mla_1p3b_seed17_v1",
+        "resume": false,
+        "retained_blocks": 4
+      }
+    ]
+  },
+  "saved_checkpoints": [
+    {
+      "run": "gdn_h_recipe_proxy_1p3b_seed17_v1",
+      "source_gpu": 5,
+      "destination_gpu": 4,
+      "checkpoint": "checkpoint_00025277",
+      "step": 25277,
+      "valid_tokens": 802400394,
+      "data_cursor": 808864,
+      "model_tensors": 1477,
+      "optimizer_and_rng_tensors": 4433,
+      "file_sha256": {
+        "model.safetensors": "bdd5be08e40c0795e952cd028dc942e736f35344a73909938b531a3189f2dbd3",
+        "optimizer.safetensors": "25e0e12120d081eec456407faf6439436f9d9c1027892d72af383b971031614e"
+      },
+      "config_sha256": "4a77d5c8795036581dafdf9049caf9b05d348b727d0f199c538aef2c7f110e4e",
+      "data_sha256": "8752157d28651b5c25234a8c39a1474a7eab8700e2375016f88c76e5bc9ee96a",
+      "retained_blocks": 14,
+      "uncheckpointed_updates_lost": 0
+    },
+    {
+      "run": "kda_mla_operator_1p3b_seed17_v1",
+      "source_gpu": 6,
+      "destination_gpu": 4,
+      "checkpoint": "checkpoint_00011792",
+      "step": 11792,
+      "valid_tokens": 373917428,
+      "data_cursor": 377344,
+      "model_tensors": 1483,
+      "optimizer_and_rng_tensors": 4451,
+      "file_sha256": {
+        "model.safetensors": "1e35689ac769806bdfb5f85029bf78d18b44c4266eb5abaa4a693988688d3c31",
+        "optimizer.safetensors": "da372b79bc5635cc96db3c8cf90993f881d8358333d250d3e700a1b468cb2038"
+      },
+      "config_sha256": "25ac1a72a88a08d33f8f9710a5ade8fac6c02bb78c6f5a65517f7b9f0dcec0e5",
+      "data_sha256": "8752157d28651b5c25234a8c39a1474a7eab8700e2375016f88c76e5bc9ee96a",
+      "retained_blocks": 5,
+      "uncheckpointed_updates_lost": 0
+    },
+    {
+      "run": "gdn_gqa_1p3b_seed17_v1",
+      "source_gpu": 7,
+      "destination_gpu": 4,
+      "checkpoint": "checkpoint_00025932",
+      "step": 25932,
+      "valid_tokens": 823137819,
+      "data_cursor": 829824,
+      "model_tensors": 1465,
+      "optimizer_and_rng_tensors": 4397,
+      "file_sha256": {
+        "model.safetensors": "b0cc96229fc908dfeae52cac64d321977d7083af9b7a556b414cb8d0fe2e74f8",
+        "optimizer.safetensors": "0e3c29e554cfa53bbe06e23efe106df46ea564f3ee6e83fcc4db371ef84687ee"
+      },
+      "config_sha256": "9a209edb14f06ff20d9a24cb8bb80e6d1add431497c016158420b9a0355e94fa",
+      "data_sha256": "8752157d28651b5c25234a8c39a1474a7eab8700e2375016f88c76e5bc9ee96a",
+      "retained_blocks": 14,
+      "uncheckpointed_updates_lost": 0
+    }
+  ],
+  "controller_verification": {
+    "status": "passed",
+    "utc": "2026-11-04T02:13:05.579675+00:00",
+    "release": "/scratch/hongse/mythos/cairn-rust/releases/20261104-v5",
+    "worker_unchanged": true,
+    "worker_sha256": "d2286b751d25d5d8e8ccb47adc762719d982569f1b974611d3796e90de3e97dd",
+    "controller_sha256": "dedfa8f6405e3945d66621991a147198ee0a33a80cb307c230a6018e4ae38a29",
+    "unit_tests_passed": 3,
+    "live_wait_probe": "waits without launching workers or claiming the active queue lock",
+    "duplicate_waiter": "rejected",
+    "paused_predecessor": "blocks all successors",
+    "retained_blocks": [
+      14,
+      5,
+      14,
+      8,
+      4
+    ],
+    "controller_network_filter": "seccomp active",
+    "controller_gpu_libraries": "none"
+  },
+  "worker_sha256": "d2286b751d25d5d8e8ccb47adc762719d982569f1b974611d3796e90de3e97dd",
+  "controller_source_sha256": "ae406c6f1ff3cbc4ef6da8233469f3e9a4fdd4a3b67ec21f541e288c2d9911b0",
+  "gpu_inventory": "4, GPU-3365efa8-a59d-a6ce-2956-7badae11bc0e, 87, 172808\n5, GPU-f8de50de-01cd-edf8-b1d7-4639ce40ec98, 0, 0\n6, GPU-cc65ba37-3386-203c-2173-dbeb44c5bf77, 0, 0\n7, GPU-0f7cbc13-0175-ed9c-689f-ab5a19c23a32, 0, 0\n",
+  "gpu_processes": "2317239, GPU-cd0b30b9-34ac-88e6-2d49-65c038170235, 20796, /scratch/otoomey/zest_floor_20261103/runtime/.pixi/envs/cuda/bin/python3\n2504498, GPU-39ad0c9b-e857-dcf0-8ea3-3493e0aa50cd, 16398, /scratch/otoomey/zest_floor_20261103/runtime/.pixi/envs/cuda/bin/python3\n2239053, GPU-3365efa8-a59d-a6ce-2956-7badae11bc0e, 172794, /scratch/hongse/mythos/cairn-rust/releases/20261103-v4/bin/cairn\n",
+  "evidence_directory": "/scratch/hongse/mythos/cairn-rust/evidence/queue_consolidation_20261104T020744Z"
+}

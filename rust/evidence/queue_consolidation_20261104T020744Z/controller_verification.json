@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "utc": "2026-11-04T02:13:05.579675+00:00",
+  "release": "/scratch/hongse/mythos/cairn-rust/releases/20261104-v5",
+  "worker_unchanged": true,
+  "worker_sha256": "d2286b751d25d5d8e8ccb47adc762719d982569f1b974611d3796e90de3e97dd",
+  "controller_sha256": "dedfa8f6405e3945d66621991a147198ee0a33a80cb307c230a6018e4ae38a29",
+  "unit_tests_passed": 3,
+  "live_wait_probe": "waits without launching workers or claiming the active queue lock",
+  "duplicate_waiter": "rejected",
+  "paused_predecessor": "blocks all successors",
+  "retained_blocks": [
+    14,
+    5,
+    14,
+    8,
+    4
+  ],
+  "controller_network_filter": "seccomp active",
+  "controller_gpu_libraries": "none"
+}

@@ -1,0 +1,15 @@
+{
+  "utc": "2026-11-04T02:12:05.575210+00:00",
+  "results": [
+    {
+      "mode": "build",
+      "returncode": 0,
+      "log": "/scratch/hongse/mythos/cairn-rust/evidence/queue_consolidation_20261104T020744Z/controller_build.log"
+    },
+    {
+      "mode": "test",
+      "returncode": 0,
+      "log": "/scratch/hongse/mythos/cairn-rust/evidence/queue_consolidation_20261104T020744Z/controller_test.log"
+    }
+  ]
+}

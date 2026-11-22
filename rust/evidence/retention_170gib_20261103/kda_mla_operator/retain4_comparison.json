@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "checkpoint": "checkpoint_00000660",
+  "updates": 10,
+  "files": [
+    {
+      "file": "model.safetensors",
+      "tensors": 1483,
+      "byte_identical": true,
+      "hashes": [
+        "604c0f46b195f0eb38839ee7e7ab488412b994f81b6fb49db3d0b85362472144",
+        "604c0f46b195f0eb38839ee7e7ab488412b994f81b6fb49db3d0b85362472144"
+      ],
+      "hash_source": "frozen_worker_checkpoint_save"
+    },
+    {
+      "file": "optimizer.safetensors",
+      "tensors": 4451,
+      "byte_identical": true,
+      "hashes": [
+        "3254a6e15d392e8dff0d49eff06d5fee06a5ffbe94604dc3d5687e535f835123",
+        "3254a6e15d392e8dff0d49eff06d5fee06a5ffbe94604dc3d5687e535f835123"
+      ],
+      "hash_source": "frozen_worker_checkpoint_save"
+    },
+    {
+      "file": "final_gradients.safetensors",
+      "tensors": 1483,
+      "byte_identical": true,
+      "hashes": [
+        "75ba80880426fe2052b9c9b931065dc697a69ba2133e13263327c99fc8918775",
+        "75ba80880426fe2052b9c9b931065dc697a69ba2133e13263327c99fc8918775"
+      ],
+      "hash_source": "computed_now"
+    }
+  ],
+  "tensors": 7417,
+  "differences": []
+}

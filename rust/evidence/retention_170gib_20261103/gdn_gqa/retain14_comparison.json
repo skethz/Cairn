@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "checkpoint": "checkpoint_00001816",
+  "updates": 10,
+  "files": [
+    {
+      "file": "model.safetensors",
+      "tensors": 1465,
+      "byte_identical": true,
+      "hashes": [
+        "7a23b5f61f872d4ce5db91a8351cd5b44f53f7d647caa7548e5ee6cf9228352a",
+        "7a23b5f61f872d4ce5db91a8351cd5b44f53f7d647caa7548e5ee6cf9228352a"
+      ],
+      "hash_source": "frozen_worker_checkpoint_save"
+    },
+    {
+      "file": "optimizer.safetensors",
+      "tensors": 4397,
+      "byte_identical": true,
+      "hashes": [
+        "8ae1bd59738c640f295a63747a29823c647c425ac3cc2d6a2d3f9381d003206e",
+        "8ae1bd59738c640f295a63747a29823c647c425ac3cc2d6a2d3f9381d003206e"
+      ],
+      "hash_source": "frozen_worker_checkpoint_save"
+    },
+    {
+      "file": "final_gradients.safetensors",
+      "tensors": 1465,
+      "byte_identical": true,
+      "hashes": [
+        "d594f1c0b561d1788d3f81be88103a8a5a03cb3b2656ed1c5f0d7005f56ed2dc",
+        "d594f1c0b561d1788d3f81be88103a8a5a03cb3b2656ed1c5f0d7005f56ed2dc"
+      ],
+      "hash_source": "computed_now"
+    }
+  ],
+  "tensors": 7327,
+  "differences": []
+}

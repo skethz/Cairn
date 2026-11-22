@@ -1,0 +1,72 @@
+{
+  "family": "gdn_gqa",
+  "gpu": 7,
+  "retained_blocks": 14,
+  "target_device_GiB": 170,
+  "conservative_peak_GiB": 168.3125,
+  "baseline_tokens_per_second": 6437.922122194279,
+  "optimized_tokens_per_second": 6985.473336286274,
+  "throughput_ratio": 1.085050922285057,
+  "measured_updates_per_setting": 16,
+  "comparison": {
+    "status": "passed",
+    "checkpoint": "checkpoint_00001816",
+    "updates": 10,
+    "files": [
+      {
+        "file": "model.safetensors",
+        "tensors": 1465,
+        "byte_identical": true,
+        "hashes": [
+          "7a23b5f61f872d4ce5db91a8351cd5b44f53f7d647caa7548e5ee6cf9228352a",
+          "7a23b5f61f872d4ce5db91a8351cd5b44f53f7d647caa7548e5ee6cf9228352a"
+        ],
+        "hash_source": "frozen_worker_checkpoint_save"
+      },
+      {
+        "file": "optimizer.safetensors",
+        "tensors": 4397,
+        "byte_identical": true,
+        "hashes": [
+          "8ae1bd59738c640f295a63747a29823c647c425ac3cc2d6a2d3f9381d003206e",
+          "8ae1bd59738c640f295a63747a29823c647c425ac3cc2d6a2d3f9381d003206e"
+        ],
+        "hash_source": "frozen_worker_checkpoint_save"
+      },
+      {
+        "file": "final_gradients.safetensors",
+        "tensors": 1465,
+        "byte_identical": true,
+        "hashes": [
+          "d594f1c0b561d1788d3f81be88103a8a5a03cb3b2656ed1c5f0d7005f56ed2dc",
+          "d594f1c0b561d1788d3f81be88103a8a5a03cb3b2656ed1c5f0d7005f56ed2dc"
+        ],
+        "hash_source": "computed_now"
+      }
+    ],
+    "tensors": 7327,
+    "differences": []
+  },
+  "all_40_update_metrics_identical": true,
+  "source_checkpoint": "checkpoint_00001806",
+  "source_valid_tokens": 57642070,
+  "uncheckpointed_updates_lost": 0,
+  "command": [
+    "/scratch/hongse/mythos/cairn-rust/releases/20261103-v4/bin/cairn-control",
+    "queue",
+    "/scratch/hongse/mythos/cairn-rust/runs",
+    "7",
+    "--resume",
+    "--optimized",
+    "--fused-scan",
+    "--deterministic",
+    "--retained-blocks",
+    "14",
+    "/scratch/hongse/mythos/cairn-rust/releases/20261103-v4/configs/gdn_gqa_1p3b.json",
+    "/scratch/hongse/mythos/cairn-rust/releases/20261103-v4/configs/full_mla_1p3b.json"
+  ],
+  "resumed_utc": "2026-11-03T01:16:57.908861+00:00",
+  "status": "running_verified",
+  "controller_pid": 32368,
+  "verified_utc": "2026-11-03T01:26:27.574375+00:00"
+}

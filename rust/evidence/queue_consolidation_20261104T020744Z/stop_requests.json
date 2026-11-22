@@ -1,0 +1,9 @@
+{
+  "requested_utc": "2026-11-04T02:07:44.022660+00:00",
+  "runs": [
+    "gdn_h_recipe_proxy_1p3b_seed17_v1",
+    "kda_mla_operator_1p3b_seed17_v1",
+    "gdn_gqa_1p3b_seed17_v1"
+  ],
+  "message": "Authorized GPU consolidation: save the completed update and release GPUs 5-7; resume on GPU 4 after Cairn completes. Evidence: /scratch/hongse/mythos/cairn-rust/evidence/queue_consolidation_20261104T020744Z\n"
+}

@@ -1,0 +1,72 @@
+{
+  "family": "gdn_h_recipe_proxy",
+  "gpu": 5,
+  "retained_blocks": 14,
+  "target_device_GiB": 170,
+  "conservative_peak_GiB": 165.970703125,
+  "baseline_tokens_per_second": 6152.371350011241,
+  "optimized_tokens_per_second": 6727.105884235557,
+  "throughput_ratio": 1.0934167496608063,
+  "measured_updates_per_setting": 16,
+  "comparison": {
+    "status": "passed",
+    "checkpoint": "checkpoint_00001811",
+    "updates": 10,
+    "files": [
+      {
+        "file": "model.safetensors",
+        "tensors": 1477,
+        "byte_identical": true,
+        "hashes": [
+          "ae2ffad108bef5edfa60ee2c2f022345c32f7683d9f608baf96f0994897b2a0c",
+          "ae2ffad108bef5edfa60ee2c2f022345c32f7683d9f608baf96f0994897b2a0c"
+        ],
+        "hash_source": "frozen_worker_checkpoint_save"
+      },
+      {
+        "file": "optimizer.safetensors",
+        "tensors": 4433,
+        "byte_identical": true,
+        "hashes": [
+          "111f0a44c7c5b06973b20485204b79513227c6d4085e4a5f1ce74dfc990a4fcc",
+          "111f0a44c7c5b06973b20485204b79513227c6d4085e4a5f1ce74dfc990a4fcc"
+        ],
+        "hash_source": "frozen_worker_checkpoint_save"
+      },
+      {
+        "file": "final_gradients.safetensors",
+        "tensors": 1477,
+        "byte_identical": true,
+        "hashes": [
+          "df6dcc52cdefe202add858a6a432c12b8248ee5e09d5bfe96a20a031b28ad6e2",
+          "df6dcc52cdefe202add858a6a432c12b8248ee5e09d5bfe96a20a031b28ad6e2"
+        ],
+        "hash_source": "computed_now"
+      }
+    ],
+    "tensors": 7387,
+    "differences": []
+  },
+  "all_40_update_metrics_identical": true,
+  "source_checkpoint": "checkpoint_00001801",
+  "source_valid_tokens": 57493115,
+  "uncheckpointed_updates_lost": 0,
+  "command": [
+    "/scratch/hongse/mythos/cairn-rust/releases/20261103-v4/bin/cairn-control",
+    "queue",
+    "/scratch/hongse/mythos/cairn-rust/runs",
+    "5",
+    "--resume",
+    "--optimized",
+    "--fused-scan",
+    "--deterministic",
+    "--retained-blocks",
+    "14",
+    "/scratch/hongse/mythos/cairn-rust/releases/20261103-v4/configs/gdn_h_recipe_proxy_1p3b.json",
+    "/scratch/hongse/mythos/cairn-rust/releases/20261103-v4/configs/dense_gqa_1p3b.json"
+  ],
+  "resumed_utc": "2026-11-03T01:16:57.858925+00:00",
+  "status": "running_verified",
+  "controller_pid": 32364,
+  "verified_utc": "2026-11-03T01:26:27.574375+00:00"
+}

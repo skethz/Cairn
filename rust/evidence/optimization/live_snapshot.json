@@ -1,0 +1,47 @@
+{
+  "utc": "2026-11-03T00:46:45Z",
+  "all_old_python_workers_exited": true,
+  "all_four_rust_workers_progressing": true,
+  "runs": [
+    {
+      "gpu": 4,
+      "family": "cairn",
+      "worker_pid": 4122052,
+      "step": 1052,
+      "valid_tokens": 33434457,
+      "nll": 4.808648928175344,
+      "peak_allocated_GiB": 109.68961572647095,
+      "resumed_checkpoint": "checkpoint_00001000"
+    },
+    {
+      "gpu": 5,
+      "family": "gdn_h_recipe_proxy",
+      "worker_pid": 4122046,
+      "step": 1554,
+      "valid_tokens": 49528672,
+      "nll": 4.377756860627053,
+      "peak_allocated_GiB": 107.95912742614746,
+      "resumed_checkpoint": "checkpoint_00001500"
+    },
+    {
+      "gpu": 6,
+      "family": "kda_mla_operator",
+      "worker_pid": 4122048,
+      "step": 526,
+      "valid_tokens": 16760115,
+      "nll": 5.4863004202337065,
+      "peak_allocated_GiB": 107.67190504074097,
+      "resumed_checkpoint": "checkpoint_00000500"
+    },
+    {
+      "gpu": 7,
+      "family": "gdn_gqa",
+      "worker_pid": 4122050,
+      "step": 1556,
+      "valid_tokens": 49597622,
+      "nll": 4.320453077883237,
+      "peak_allocated_GiB": 109.37820768356323,
+      "resumed_checkpoint": "checkpoint_00001500"
+    }
+  ]
+}

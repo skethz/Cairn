@@ -1,0 +1,11 @@
+   Compiling cairn v0.1.0 (/scratch/hongse/mythos/cairn-rust)
+    Finished `release` profile [optimized] target(s) in 3.83s
+     Running unittests src/bin/control.rs (target/release/deps/cairn_control-76e080683fcff50b)
+
+running 3 tests
+test tests::each_family_keeps_its_verified_memory_budget ... ok
+test tests::paused_or_failed_predecessor_does_not_start_successors ... ok
+test tests::waits_for_completion_and_both_locks ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

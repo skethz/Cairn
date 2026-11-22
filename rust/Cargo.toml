@@ -1,0 +1,41 @@
+[package]
+name = "cairn"
+version = "0.1.0"
+edition = "2024"
+description = "Offline Rust implementation of Cairn training and local inference"
+publish = false
+
+[dependencies]
+anyhow = "1.0"
+clap = { version = "4.5", features = ["derive"] }
+libc = "0.2"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { version = "1.0", features = ["preserve_order"] }
+sha2 = "0.10"
+hex = "0.4"
+memmap2 = "0.9"
+tch = { version = "=0.24.0", default-features = false }
+torch-sys = { version = "=0.24.0", default-features = false }
+tokenizers = { version = "=0.22.2", default-features = false, features = ["onig"] }
+parquet = { version = "=57.0.0", default-features = false, features = ["arrow", "json", "snap", "zstd", "flate2-zlib-rs"] }
+arrow-array = "=57.0.0"
+
+[build-dependencies]
+cc = "1.2"
+
+[profile.release]
+debug = 0
+lto = "thin"
+codegen-units = 8
+
+[[bin]]
+name = "cairn"
+path = "src/main.rs"
+
+[[bin]]
+name = "cairn-run"
+path = "src/bin/launch.rs"
+
+[[bin]]
+name = "cairn-control"
+path = "src/bin/control.rs"

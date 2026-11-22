@@ -1,0 +1,39 @@
+{
+  "gpu": 4,
+  "pid": 3070362,
+  "status": "blocked",
+  "after_run": "predecessor",
+  "planned": [
+    {
+      "config": "/scratch/hongse/mythos/cairn-rust/releases/20261104-v5/configs/gdn_h_recipe_proxy_1p3b.json",
+      "run": "gdn_h_recipe_proxy_1p3b_seed17_v1",
+      "resume": false,
+      "retained_blocks": 14
+    },
+    {
+      "config": "/scratch/hongse/mythos/cairn-rust/releases/20261104-v5/configs/kda_mla_operator_1p3b.json",
+      "run": "kda_mla_operator_1p3b_seed17_v1",
+      "resume": false,
+      "retained_blocks": 5
+    },
+    {
+      "config": "/scratch/hongse/mythos/cairn-rust/releases/20261104-v5/configs/gdn_gqa_1p3b.json",
+      "run": "gdn_gqa_1p3b_seed17_v1",
+      "resume": false,
+      "retained_blocks": 14
+    },
+    {
+      "config": "/scratch/hongse/mythos/cairn-rust/releases/20261104-v5/configs/dense_gqa_1p3b.json",
+      "run": "dense_gqa_1p3b_seed17_v1",
+      "resume": false,
+      "retained_blocks": 8
+    },
+    {
+      "config": "/scratch/hongse/mythos/cairn-rust/releases/20261104-v5/configs/full_mla_1p3b.json",
+      "run": "full_mla_1p3b_seed17_v1",
+      "resume": false,
+      "retained_blocks": 4
+    }
+  ],
+  "error": "Predecessor did not complete: \"stopped_at_checkpoint\""
+}

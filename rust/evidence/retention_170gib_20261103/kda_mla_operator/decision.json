@@ -1,0 +1,71 @@
+{
+  "family": "kda_mla_operator",
+  "gpu": 6,
+  "retained_blocks": 5,
+  "target_device_GiB": 170,
+  "conservative_peak_GiB": 169.8671875,
+  "baseline_tokens_per_second": 3554.72189184376,
+  "optimized_tokens_per_second": 3681.3500301183026,
+  "throughput_ratio": 1.0356225162269623,
+  "measured_updates_per_setting": 16,
+  "comparison": {
+    "status": "passed",
+    "checkpoint": "checkpoint_00000660",
+    "updates": 10,
+    "files": [
+      {
+        "file": "model.safetensors",
+        "tensors": 1483,
+        "byte_identical": true,
+        "hashes": [
+          "604c0f46b195f0eb38839ee7e7ab488412b994f81b6fb49db3d0b85362472144",
+          "604c0f46b195f0eb38839ee7e7ab488412b994f81b6fb49db3d0b85362472144"
+        ],
+        "hash_source": "frozen_worker_checkpoint_save"
+      },
+      {
+        "file": "optimizer.safetensors",
+        "tensors": 4451,
+        "byte_identical": true,
+        "hashes": [
+          "3254a6e15d392e8dff0d49eff06d5fee06a5ffbe94604dc3d5687e535f835123",
+          "3254a6e15d392e8dff0d49eff06d5fee06a5ffbe94604dc3d5687e535f835123"
+        ],
+        "hash_source": "frozen_worker_checkpoint_save"
+      },
+      {
+        "file": "final_gradients.safetensors",
+        "tensors": 1483,
+        "byte_identical": true,
+        "hashes": [
+          "75ba80880426fe2052b9c9b931065dc697a69ba2133e13263327c99fc8918775",
+          "75ba80880426fe2052b9c9b931065dc697a69ba2133e13263327c99fc8918775"
+        ],
+        "hash_source": "computed_now"
+      }
+    ],
+    "tensors": 7417,
+    "differences": []
+  },
+  "all_40_update_metrics_identical": true,
+  "source_checkpoint": "checkpoint_00000650",
+  "source_valid_tokens": 20719704,
+  "uncheckpointed_updates_lost": 0,
+  "command": [
+    "/scratch/hongse/mythos/cairn-rust/releases/20261103-v4/bin/cairn-control",
+    "queue",
+    "/scratch/hongse/mythos/cairn-rust/runs",
+    "6",
+    "--resume",
+    "--optimized",
+    "--fused-scan",
+    "--deterministic",
+    "--retained-blocks",
+    "5",
+    "/scratch/hongse/mythos/cairn-rust/releases/20261103-v4/configs/kda_mla_operator_1p3b.json"
+  ],
+  "resumed_utc": "2026-11-03T01:19:34.428386+00:00",
+  "status": "running_verified",
+  "controller_pid": 35711,
+  "verified_utc": "2026-11-03T01:26:27.574375+00:00"
+}

@@ -1,0 +1,89 @@
+{
+  "status": "paused_by_user",
+  "verified_at": "2026-11-04T06:13:03.627230+01:00",
+  "gpu4_release": {
+    "verified_at": "2026-11-04T06:12:53.623908+01:00",
+    "step": 27814,
+    "valid_tokens": 882864406,
+    "gpu4": "4, GPU-3365efa8-a59d-a6ce-2956-7badae11bc0e, 0, 0",
+    "workers_and_controllers_exited": true
+  },
+  "cairn_checkpoint": "checkpoint_00027814",
+  "cairn_file_sha256": {
+    "model.safetensors": "83c29658448eb47027b5f4b4ad59f1f5dff7166fcf87b66a476e9c091758f4bf",
+    "optimizer.safetensors": "adb51db4ef9ee7a5491edc3f2f0c1f1b93eee50c0394b62d15203dd076a33f65"
+  },
+  "model_tensors": 1483,
+  "optimizer_and_rng_tensors": 4451,
+  "cpu_and_cuda_rng_present": true,
+  "uncheckpointed_updates_lost": 0,
+  "requested_resume_order": [
+    "cairn_1p3b_seed17_v1",
+    "gdn_h_recipe_proxy_1p3b_seed17_v1",
+    "kda_mla_operator_1p3b_seed17_v1",
+    "gdn_gqa_1p3b_seed17_v1"
+  ],
+  "checkpoints": [
+    {
+      "run": "cairn_1p3b_seed17_v1",
+      "checkpoint": "checkpoint_00027814",
+      "step": 27814,
+      "valid_tokens": 882864406,
+      "data_cursor": 890048,
+      "retained_blocks": 14
+    },
+    {
+      "run": "gdn_h_recipe_proxy_1p3b_seed17_v1",
+      "checkpoint": "checkpoint_00025277",
+      "step": 25277,
+      "valid_tokens": 802400394,
+      "data_cursor": 808864,
+      "retained_blocks": 14
+    },
+    {
+      "run": "kda_mla_operator_1p3b_seed17_v1",
+      "checkpoint": "checkpoint_00011792",
+      "step": 11792,
+      "valid_tokens": 373917428,
+      "data_cursor": 377344,
+      "retained_blocks": 5
+    },
+    {
+      "run": "gdn_gqa_1p3b_seed17_v1",
+      "checkpoint": "checkpoint_00025932",
+      "step": 25932,
+      "valid_tokens": 823137819,
+      "data_cursor": 829824,
+      "retained_blocks": 14
+    }
+  ],
+  "automatic_followup_stopped": true,
+  "previously_queued_extra_models_deferred": [
+    "dense_gqa_1p3b_seed17_v1",
+    "full_mla_1p3b_seed17_v1"
+  ],
+  "resume_command_after_explicit_request": [
+    "/scratch/hongse/mythos/cairn-rust/releases/20261104-v5/bin/cairn-control",
+    "queue",
+    "/scratch/hongse/mythos/cairn-rust/runs",
+    "4",
+    "--resume",
+    "--optimized",
+    "--fused-scan",
+    "--deterministic",
+    "--retained-blocks",
+    "14",
+    "/scratch/hongse/mythos/cairn-rust/releases/20261104-v5/configs/cairn_1p3b.json",
+    "/scratch/hongse/mythos/cairn-rust/releases/20261104-v5/configs/gdn_h_recipe_proxy_1p3b.json",
+    "/scratch/hongse/mythos/cairn-rust/releases/20261104-v5/configs/kda_mla_operator_1p3b.json",
+    "/scratch/hongse/mythos/cairn-rust/releases/20261104-v5/configs/gdn_gqa_1p3b.json"
+  ],
+  "resume_requirements": [
+    "Wait for explicit user resume request",
+    "Confirm GPU 4 is available",
+    "Verify saved checkpoint pointers and hashes",
+    "Archive this pause request for each of the four runs",
+    "Start the recorded four-model queue; keep Dense GQA and Full MLA deferred unless requested"
+  ],
+  "evidence_directory": "/scratch/hongse/mythos/cairn-rust/evidence/gpu4_pause_20261104T051200Z"
+}

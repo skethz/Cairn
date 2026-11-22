@@ -1,0 +1,11 @@
+[
+  {
+    "case": "cuda_cairn",
+    "tensors": 1270,
+    "bitwise_equal": 1270,
+    "different": 0,
+    "failures": [],
+    "forward_differences": [],
+    "largest_differences": []
+  }
+]

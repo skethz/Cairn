@@ -1,0 +1,73 @@
+{
+  "status": "running_verified",
+  "verified_utc": "2026-11-03T17:38:43.683306+00:00",
+  "release": "/scratch/hongse/mythos/cairn-rust/releases/20261103-v4",
+  "handoff_sha256": "d9810b9a5528600b050e565de5142cd0019806de790269fe71bf88ee2f22150b",
+  "worker_sha256": "d2286b751d25d5d8e8ccb47adc762719d982569f1b974611d3796e90de3e97dd",
+  "runs": [
+    {
+      "gpu": 4,
+      "run": "cairn_1p3b_seed17_v1",
+      "checkpoint": "checkpoint_00015803",
+      "saved_step": 15803,
+      "first_new_step": 15804,
+      "first_new_valid_tokens": 501449507,
+      "verified_step": 15806,
+      "valid_tokens": 501526798,
+      "data_cursor": 505792,
+      "retained_blocks": 14,
+      "controller_pid": 2239023,
+      "worker_pid": 2239053,
+      "queued_models": []
+    },
+    {
+      "gpu": 5,
+      "run": "gdn_h_recipe_proxy_1p3b_seed17_v1",
+      "checkpoint": "checkpoint_00016326",
+      "saved_step": 16326,
+      "first_new_step": 16327,
+      "first_new_valid_tokens": 518177217,
+      "verified_step": 16330,
+      "valid_tokens": 518286272,
+      "data_cursor": 522560,
+      "retained_blocks": 14,
+      "controller_pid": 2239049,
+      "worker_pid": 2239070,
+      "queued_models": [
+        "dense_gqa_1p3b_seed17_v1"
+      ]
+    },
+    {
+      "gpu": 6,
+      "run": "kda_mla_operator_1p3b_seed17_v1",
+      "checkpoint": "checkpoint_00007571",
+      "saved_step": 7571,
+      "first_new_step": 7572,
+      "first_new_valid_tokens": 240394188,
+      "verified_step": 7573,
+      "valid_tokens": 240419177,
+      "data_cursor": 242336,
+      "retained_blocks": 5,
+      "controller_pid": 2239066,
+      "worker_pid": 2239101,
+      "queued_models": []
+    },
+    {
+      "gpu": 7,
+      "run": "gdn_gqa_1p3b_seed17_v1",
+      "checkpoint": "checkpoint_00016740",
+      "saved_step": 16740,
+      "first_new_step": 16741,
+      "first_new_valid_tokens": 531216432,
+      "verified_step": 16744,
+      "valid_tokens": 531318098,
+      "data_cursor": 535808,
+      "retained_blocks": 14,
+      "controller_pid": 2239094,
+      "worker_pid": 2239252,
+      "queued_models": [
+        "full_mla_1p3b_seed17_v1"
+      ]
+    }
+  ]
+}

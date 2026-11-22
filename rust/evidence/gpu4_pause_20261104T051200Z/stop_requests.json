@@ -1,0 +1,10 @@
+{
+  "message": "User requested pause: checkpoint Cairn and hold the entire sequence until an explicit resume request. Evidence: /scratch/hongse/mythos/cairn-rust/evidence/gpu4_pause_20261104T051200Z\n",
+  "runs": [
+    "cairn_1p3b_seed17_v1",
+    "gdn_h_recipe_proxy_1p3b_seed17_v1",
+    "kda_mla_operator_1p3b_seed17_v1",
+    "gdn_gqa_1p3b_seed17_v1"
+  ],
+  "requested_utc": "2026-11-04T05:12:00.778555+00:00"
+}

@@ -1,0 +1,500 @@
+[
+  {
+    "elapsed_seconds": 0.12467107409611344,
+    "used_GiB": 0.0,
+    "free_GiB": 178.3916015625,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 2.9199847548734397,
+    "used_GiB": 0.0009765625,
+    "free_GiB": 178.3916015625,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 4.059504712931812,
+    "used_GiB": 0.02734375,
+    "free_GiB": 178.3642578125,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 5.111495204037055,
+    "used_GiB": 0.71484375,
+    "free_GiB": 177.6767578125,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 6.1685064299963415,
+    "used_GiB": 0.71484375,
+    "free_GiB": 177.6767578125,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 7.220672914059833,
+    "used_GiB": 0.71484375,
+    "free_GiB": 177.6767578125,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 8.31305529200472,
+    "used_GiB": 0.71484375,
+    "free_GiB": 177.6767578125,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 9.421329299919307,
+    "used_GiB": 0.71484375,
+    "free_GiB": 177.6767578125,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 10.553212610073388,
+    "used_GiB": 0.71484375,
+    "free_GiB": 177.6767578125,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 11.685201626969501,
+    "used_GiB": 0.71484375,
+    "free_GiB": 177.6767578125,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 12.818786550080404,
+    "used_GiB": 0.71484375,
+    "free_GiB": 177.6767578125,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 14.014806783990934,
+    "used_GiB": 0.71484375,
+    "free_GiB": 177.6767578125,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 15.170439594890922,
+    "used_GiB": 1.751953125,
+    "free_GiB": 176.6396484375,
+    "utilization_percent": 3.0
+  },
+  {
+    "elapsed_seconds": 16.32459299196489,
+    "used_GiB": 3.02734375,
+    "free_GiB": 175.3642578125,
+    "utilization_percent": 3.0
+  },
+  {
+    "elapsed_seconds": 17.49023877689615,
+    "used_GiB": 4.337890625,
+    "free_GiB": 174.0537109375,
+    "utilization_percent": 3.0
+  },
+  {
+    "elapsed_seconds": 18.67871560389176,
+    "used_GiB": 6.08203125,
+    "free_GiB": 172.3095703125,
+    "utilization_percent": 1.0
+  },
+  {
+    "elapsed_seconds": 19.8392835019622,
+    "used_GiB": 15.5078125,
+    "free_GiB": 162.8837890625,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 20.977486188989133,
+    "used_GiB": 15.5078125,
+    "free_GiB": 162.8837890625,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 22.104562108870596,
+    "used_GiB": 15.5078125,
+    "free_GiB": 162.8837890625,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 23.234316444024444,
+    "used_GiB": 15.5078125,
+    "free_GiB": 162.8837890625,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 24.38671035389416,
+    "used_GiB": 15.5078125,
+    "free_GiB": 162.8837890625,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 25.541410760954022,
+    "used_GiB": 15.5078125,
+    "free_GiB": 162.8837890625,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 26.695781498914585,
+    "used_GiB": 15.5078125,
+    "free_GiB": 162.8837890625,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 27.84004826308228,
+    "used_GiB": 15.5078125,
+    "free_GiB": 162.8837890625,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 29.001031124964356,
+    "used_GiB": 15.5078125,
+    "free_GiB": 162.8837890625,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 30.150203574914485,
+    "used_GiB": 15.5078125,
+    "free_GiB": 162.8837890625,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 31.310864340979606,
+    "used_GiB": 15.626953125,
+    "free_GiB": 162.7646484375,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 32.450794843025506,
+    "used_GiB": 15.626953125,
+    "free_GiB": 162.7646484375,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 33.60422210302204,
+    "used_GiB": 15.626953125,
+    "free_GiB": 162.7646484375,
+    "utilization_percent": 22.0
+  },
+  {
+    "elapsed_seconds": 34.77458400209434,
+    "used_GiB": 15.626953125,
+    "free_GiB": 162.7646484375,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 35.934466908918694,
+    "used_GiB": 15.626953125,
+    "free_GiB": 162.7646484375,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 37.07863229699433,
+    "used_GiB": 15.626953125,
+    "free_GiB": 162.7646484375,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 38.2244705890771,
+    "used_GiB": 15.62890625,
+    "free_GiB": 162.7626953125,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 39.389037929009646,
+    "used_GiB": 16.01953125,
+    "free_GiB": 162.3720703125,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 40.58073521894403,
+    "used_GiB": 16.01953125,
+    "free_GiB": 162.3720703125,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 41.87339455890469,
+    "used_GiB": 16.01953125,
+    "free_GiB": 162.3720703125,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 43.02460261597298,
+    "used_GiB": 16.021484375,
+    "free_GiB": 162.3701171875,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 44.1757528570015,
+    "used_GiB": 16.021484375,
+    "free_GiB": 162.3701171875,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 45.32007408188656,
+    "used_GiB": 16.021484375,
+    "free_GiB": 162.3701171875,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 46.48904237803072,
+    "used_GiB": 16.54296875,
+    "free_GiB": 161.8486328125,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 47.64248776296154,
+    "used_GiB": 16.54296875,
+    "free_GiB": 161.8486328125,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 48.787389720091596,
+    "used_GiB": 16.54296875,
+    "free_GiB": 161.8486328125,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 49.94812022102997,
+    "used_GiB": 35.07421875,
+    "free_GiB": 143.3173828125,
+    "utilization_percent": 4.0
+  },
+  {
+    "elapsed_seconds": 51.1137946320232,
+    "used_GiB": 118.51171875,
+    "free_GiB": 59.8798828125,
+    "utilization_percent": 0.0
+  },
+  {
+    "elapsed_seconds": 52.28039941797033,
+    "used_GiB": 157.59375,
+    "free_GiB": 20.7978515625,
+    "utilization_percent": 27.0
+  },
+  {
+    "elapsed_seconds": 53.43814195203595,
+    "used_GiB": 162.828125,
+    "free_GiB": 15.5634765625,
+    "utilization_percent": 36.0
+  },
+  {
+    "elapsed_seconds": 54.60687620495446,
+    "used_GiB": 162.830078125,
+    "free_GiB": 15.5615234375,
+    "utilization_percent": 41.0
+  },
+  {
+    "elapsed_seconds": 55.741694095078856,
+    "used_GiB": 163.119140625,
+    "free_GiB": 15.2724609375,
+    "utilization_percent": 62.0
+  },
+  {
+    "elapsed_seconds": 56.90560994297266,
+    "used_GiB": 167.845703125,
+    "free_GiB": 10.5458984375,
+    "utilization_percent": 60.0
+  },
+  {
+    "elapsed_seconds": 58.067561433883384,
+    "used_GiB": 167.845703125,
+    "free_GiB": 10.5458984375,
+    "utilization_percent": 79.0
+  },
+  {
+    "elapsed_seconds": 59.22512984694913,
+    "used_GiB": 167.845703125,
+    "free_GiB": 10.5458984375,
+    "utilization_percent": 60.0
+  },
+  {
+    "elapsed_seconds": 60.4103866328951,
+    "used_GiB": 167.845703125,
+    "free_GiB": 10.5458984375,
+    "utilization_percent": 64.0
+  },
+  {
+    "elapsed_seconds": 61.55081536108628,
+    "used_GiB": 167.845703125,
+    "free_GiB": 10.5458984375,
+    "utilization_percent": 65.0
+  },
+  {
+    "elapsed_seconds": 62.734051767969504,
+    "used_GiB": 168.099609375,
+    "free_GiB": 10.2919921875,
+    "utilization_percent": 55.0
+  },
+  {
+    "elapsed_seconds": 63.91658688895404,
+    "used_GiB": 168.1015625,
+    "free_GiB": 10.2900390625,
+    "utilization_percent": 45.0
+  },
+  {
+    "elapsed_seconds": 65.36582450103015,
+    "used_GiB": 168.1015625,
+    "free_GiB": 10.2900390625,
+    "utilization_percent": 42.0
+  },
+  {
+    "elapsed_seconds": 66.49717011488974,
+    "used_GiB": 168.1015625,
+    "free_GiB": 10.2900390625,
+    "utilization_percent": 74.0
+  },
+  {
+    "elapsed_seconds": 67.66256379103288,
+    "used_GiB": 168.1015625,
+    "free_GiB": 10.2900390625,
+    "utilization_percent": 70.0
+  },
+  {
+    "elapsed_seconds": 68.81787826889195,
+    "used_GiB": 168.1015625,
+    "free_GiB": 10.2900390625,
+    "utilization_percent": 44.0
+  },
+  {
+    "elapsed_seconds": 69.96840358688496,
+    "used_GiB": 168.1015625,
+    "free_GiB": 10.2900390625,
+    "utilization_percent": 27.0
+  },
+  {
+    "elapsed_seconds": 71.11078952997923,
+    "used_GiB": 168.1015625,
+    "free_GiB": 10.2900390625,
+    "utilization_percent": 60.0
+  },
+  {
+    "elapsed_seconds": 72.25468407804146,
+    "used_GiB": 168.103515625,
+    "free_GiB": 10.2880859375,
+    "utilization_percent": 69.0
+  },
+  {
+    "elapsed_seconds": 73.39575114892796,
+    "used_GiB": 168.103515625,
+    "free_GiB": 10.2880859375,
+    "utilization_percent": 89.0
+  },
+  {
+    "elapsed_seconds": 74.54623556695879,
+    "used_GiB": 168.103515625,
+    "free_GiB": 10.2880859375,
+    "utilization_percent": 77.0
+  },
+  {
+    "elapsed_seconds": 75.68513311701827,
+    "used_GiB": 168.103515625,
+    "free_GiB": 10.2880859375,
+    "utilization_percent": 66.0
+  },
+  {
+    "elapsed_seconds": 76.83094422402792,
+    "used_GiB": 168.103515625,
+    "free_GiB": 10.2880859375,
+    "utilization_percent": 89.0
+  },
+  {
+    "elapsed_seconds": 77.94566528592259,
+    "used_GiB": 168.103515625,
+    "free_GiB": 10.2880859375,
+    "utilization_percent": 49.0
+  },
+  {
+    "elapsed_seconds": 79.08283766987734,
+    "used_GiB": 168.103515625,
+    "free_GiB": 10.2880859375,
+    "utilization_percent": 74.0
+  },
+  {
+    "elapsed_seconds": 80.23137246398255,
+    "used_GiB": 168.103515625,
+    "free_GiB": 10.2880859375,
+    "utilization_percent": 65.0
+  },
+  {
+    "elapsed_seconds": 81.39446234609932,
+    "used_GiB": 168.103515625,
+    "free_GiB": 10.2880859375,
+    "utilization_percent": 66.0
+  },
+  {
+    "elapsed_seconds": 82.5512330129277,
+    "used_GiB": 168.103515625,
+    "free_GiB": 10.2880859375,
+    "utilization_percent": 78.0
+  },
+  {
+    "elapsed_seconds": 83.68853848194703,
+    "used_GiB": 168.103515625,
+    "free_GiB": 10.2880859375,
+    "utilization_percent": 77.0
+  },
+  {
+    "elapsed_seconds": 84.85082549089566,
+    "used_GiB": 168.103515625,
+    "free_GiB": 10.2880859375,
+    "utilization_percent": 64.0
+  },
+  {
+    "elapsed_seconds": 85.99697931809351,
+    "used_GiB": 168.103515625,
+    "free_GiB": 10.2880859375,
+    "utilization_percent": 71.0
+  },
+  {
+    "elapsed_seconds": 87.15123182209209,
+    "used_GiB": 168.103515625,
+    "free_GiB": 10.2880859375,
+    "utilization_percent": 79.0
+  },
+  {
+    "elapsed_seconds": 88.27859010407701,
+    "used_GiB": 168.103515625,
+    "free_GiB": 10.2880859375,
+    "utilization_percent": 60.0
+  },
+  {
+    "elapsed_seconds": 89.40756843797863,
+    "used_GiB": 168.103515625,
+    "free_GiB": 10.2880859375,
+    "utilization_percent": 57.0
+  },
+  {
+    "elapsed_seconds": 90.54778249608353,
+    "used_GiB": 168.103515625,
+    "free_GiB": 10.2880859375,
+    "utilization_percent": 66.0
+  },
+  {
+    "elapsed_seconds": 91.68307174905203,
+    "used_GiB": 168.103515625,
+    "free_GiB": 10.2880859375,
+    "utilization_percent": 76.0
+  },
+  {
+    "elapsed_seconds": 92.8180073259864,
+    "used_GiB": 168.103515625,
+    "free_GiB": 10.2880859375,
+    "utilization_percent": 71.0
+  },
+  {
+    "elapsed_seconds": 93.94434638693929,
+    "used_GiB": 168.103515625,
+    "free_GiB": 10.2880859375,
+    "utilization_percent": 89.0
+  },
+  {
+    "elapsed_seconds": 95.0819472859148,
+    "used_GiB": 168.103515625,
+    "free_GiB": 10.2880859375,
+    "utilization_percent": 84.0
+  },
+  {
+    "elapsed_seconds": 96.21744577307254,
+    "used_GiB": 168.103515625,
+    "free_GiB": 10.2880859375,
+    "utilization_percent": 0.0
+  }
+]

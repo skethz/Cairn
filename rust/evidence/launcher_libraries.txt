@@ -1,0 +1,5 @@
+	linux-vdso.so.1 (0x000072acf9a72000)
+	libseccomp.so.2 => /usr/lib/x86_64-linux-gnu/libseccomp.so.2 (0x000072acf99c6000)
+	libgcc_s.so.1 => /usr/lib/x86_64-linux-gnu/libgcc_s.so.1 (0x000072acf9998000)
+	libc.so.6 => /usr/lib/x86_64-linux-gnu/libc.so.6 (0x000072acf9600000)
+	/lib64/ld-linux-x86-64.so.2 (0x000072acf9a74000)

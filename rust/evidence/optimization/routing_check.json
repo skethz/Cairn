@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "rows": 1,
+      "experts": 2,
+      "top_k": 1,
+      "skew": false,
+      "exact": true
+    },
+    {
+      "rows": 259,
+      "experts": 16,
+      "top_k": 2,
+      "skew": false,
+      "exact": true
+    },
+    {
+      "rows": 65536,
+      "experts": 16,
+      "top_k": 2,
+      "skew": false,
+      "exact": true
+    },
+    {
+      "rows": 1025,
+      "experts": 64,
+      "top_k": 1,
+      "skew": true,
+      "exact": true
+    },
+    {
+      "rows": 131,
+      "experts": 4,
+      "top_k": 4,
+      "skew": false,
+      "exact": true
+    }
+  ]
+}

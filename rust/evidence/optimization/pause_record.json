@@ -1,0 +1,49 @@
+{
+  "pid": 3810361,
+  "paused_at": 1793663544.9470954,
+  "run": "/scratch/hongse/mythos/cairn-training/runs/cairn_1p3b_seed17_v1",
+  "checkpoint": "checkpoint_00001000",
+  "live_status": {
+    "status": "running",
+    "step": 1121,
+    "valid_tokens": 35651670,
+    "data_cursor": 35872,
+    "config_sha256": "270ff14872c618ebe1712eb9af895c3307bf18a4265a7f9f438e57614ddd32de",
+    "data_sha256": "8752157d28651b5c25234a8c39a1474a7eab8700e2375016f88c76e5bc9ee96a",
+    "last_step": {
+      "event": "train",
+      "step": 1121,
+      "valid_tokens": 35651670,
+      "batch_valid_tokens": 27378,
+      "nll": 4.633567554240631,
+      "router_aux": 0.9950783369517482,
+      "lr": 0.0003997742644276537,
+      "gradient_norm": 0.5356096029281616,
+      "seconds": 2.7811339201871306,
+      "tokens_per_second": 9844.186143383506,
+      "peak_allocated_GiB": 36.67051124572754,
+      "peak_reserved_GiB": 39.16015625,
+      "padding_fraction": 0.55439453125,
+      "unused_nominal_context_fraction": 0.7911224365234375,
+      "mean_expert_load": [
+        0.06463301926851273,
+        0.06427689641714096,
+        0.05434688925743103,
+        0.06317697465419769,
+        0.05911266431212425,
+        0.06429433077573776,
+        0.06181472912430763,
+        0.05949784070253372,
+        0.06616543233394623,
+        0.06476916372776031,
+        0.06376387923955917,
+        0.06630987673997879,
+        0.05887109413743019,
+        0.06725373864173889,
+        0.05932849645614624,
+        0.06238503009080887
+      ]
+    }
+  },
+  "reason": "exclusive GPU4 comparison; resume original worker after measurement"
+}

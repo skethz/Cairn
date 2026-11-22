@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "device": "cpu",
+  "dataset_batches": 6,
+  "unicode_tokenizer_texts": 8,
+  "byte_bpe_training_and_roundtrip": true,
+  "continuation_boundary": true,
+  "recurrence_tensors": 64,
+  "recurrence_reference": "sequential update; scalar/channel decay; nonzero initial state; lengths not divisible by chunk; all input gradients"
+}

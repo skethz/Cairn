@@ -1,0 +1,17 @@
+[
+  {
+    "task": "arc_challenge.jsonl",
+    "examples": 1172,
+    "semantic_equality": true
+  },
+  {
+    "task": "boolq.jsonl",
+    "examples": 3270,
+    "semantic_equality": true
+  },
+  {
+    "task": "piqa.jsonl",
+    "examples": 1838,
+    "semantic_equality": true
+  }
+]

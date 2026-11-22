@@ -1,0 +1,11 @@
+{
+  "gpu": 7,
+  "status": "running",
+  "current": "gdn_gqa_1p3b_seed17_v1",
+  "finished": [],
+  "resume": true,
+  "optimized": true,
+  "retained_blocks": 14,
+  "deterministic": true,
+  "fused_scan": true
+}

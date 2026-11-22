@@ -1,0 +1,11 @@
+{
+  "gpu": 5,
+  "status": "running",
+  "current": "gdn_h_recipe_proxy_1p3b_seed17_v1",
+  "finished": [],
+  "resume": true,
+  "optimized": true,
+  "retained_blocks": 14,
+  "deterministic": true,
+  "fused_scan": true
+}

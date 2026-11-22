@@ -1,0 +1,1 @@
+{"status": "passed", "tensors": 64, "rtol": 1e-07, "atol": 1e-08, "scope": "FP64 output, final state, all input gradients; nonzero initial state; scalar/channel decay; chunks 1/4/8/16"}

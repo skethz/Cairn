@@ -1,0 +1,90 @@
+{
+  "language": "Rust",
+  "native_backend": "LibTorch 2.11.0; no Python runtime",
+  "executable_sha256": "d2286b751d25d5d8e8ccb47adc762719d982569f1b974611d3796e90de3e97dd",
+  "parameters": 1302033408,
+  "config_sha256": "21123006f5a2c194c3ef751b4516ff3c41a14c2b927f0dcdbc88099e4856edc6",
+  "data_sha256": "8752157d28651b5c25234a8c39a1474a7eab8700e2375016f88c76e5bc9ee96a",
+  "config": {
+    "run_name": "full_mla_1p3b_seed17_v1",
+    "model": {
+      "family": "full_mla",
+      "width": 1024,
+      "layers": 24,
+      "vocab_size": 32000,
+      "gdn_heads": 16,
+      "gdn_key_dim": 32,
+      "gdn_value_dim": 64,
+      "gdn_chunk": 64,
+      "kda_chunk": 32,
+      "mla_heads": 16,
+      "mla_content_dim": 32,
+      "mla_rope_dim": 16,
+      "mla_value_dim": 64,
+      "mla_rank": 256,
+      "gqa_kv_heads": 4,
+      "experts": 16,
+      "top_k": 2,
+      "groups": 4,
+      "keep_groups": 2,
+      "expert_width": 992,
+      "dense_width": 3072,
+      "activation_checkpointing": true,
+      "dense_layer_indices": [
+        0,
+        23
+      ]
+    },
+    "training": {
+      "seed": 17,
+      "context": 4096,
+      "microbatch": 16,
+      "accumulation": 2,
+      "peak_lr": 0.0004,
+      "clip": 1.0,
+      "router_coefficient": 0.01,
+      "router_aggregation": "valid-token-weighted mean of microbatch auxiliary losses",
+      "warmup_fraction": 0.02,
+      "valid_token_budget": 1000000000,
+      "max_steps": 1000000,
+      "eval_every": 100,
+      "eval_batches": 16,
+      "checkpoint_every": 500,
+      "mtp_enabled": false,
+      "initialization": "SHA256(seed,module name) independent RNG; common named/shaped matrices identical across families",
+      "padding": "single-document rows, trim right padding to common multiple of 64, maximum context 4096",
+      "minimum_lr_fraction": 0.01,
+      "initial_checkpoint_step": 10
+    },
+    "data_directory": "/scratch/hongse/mythos/cairn-training/data",
+    "parameter_count_interval": [
+      1235000000,
+      1365000000
+    ],
+    "scope": "Controlled from-scratch architecture study; common protocol. Not a reproduction of published 100B-token scores.",
+    "source_scale_references": [
+      "https://arxiv.org/html/2412.06464v3",
+      "https://arxiv.org/html/2605.22791v1"
+    ],
+    "training_variant": "FP32 master/optimizer state, BF16 matrix autocast, FP32 delta-state; MTP omitted",
+    "comparison": "same width/depth/experts/tokenizer/seed/token order; parameter differences reported, not equal-FLOP by assertion",
+    "prior_recipe_differences": [
+      "Independent 32K byte BPE instead of Llama2 tokenizer",
+      "1B-token initial controlled stage instead of 100B",
+      "2% warmup of this stage",
+      "Cairn reduced-expert geometry; not full original model",
+      "Shared reduced head dimensions across controls; not original head counts or state dimensions",
+      "Preserve dense FFNs at both boundaries, one initial and one terminal layer; 114-layer original has two initial and five terminal dense layers",
+      "131072 nominal token slots per update (32 document rows); valid target tokens vary with document lengths, rather than the published 0.5M-token batch"
+    ],
+    "network": "mandatory OS denial; no online mode",
+    "benchmark_directory": "/scratch/hongse/mythos/cairn-training/benchmarks"
+  },
+  "network": "mandatory seccomp denial before model creation",
+  "gpu_physical_index": "7",
+  "original_code_executed": false,
+  "pretrained_weights_loaded": false,
+  "optimizer": "native fused AdamW; FP32 parameters/gradients/moments; BF16 autocast",
+  "activation_recomputation": "Rust block VJP",
+  "optimized_execution": true
+}

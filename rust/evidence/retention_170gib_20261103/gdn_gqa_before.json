@@ -1,0 +1,62 @@
+{
+  "utc": "2026-11-03T01:02:17.988853+00:00",
+  "pid": 4122050,
+  "status": {
+    "step": 1805,
+    "valid_tokens": 57610054,
+    "data_cursor": 57760,
+    "config_sha256": "9a209edb14f06ff20d9a24cb8bb80e6d1add431497c016158420b9a0355e94fa",
+    "data_sha256": "8752157d28651b5c25234a8c39a1474a7eab8700e2375016f88c76e5bc9ee96a",
+    "sha256": {
+      "model.safetensors": "3a33a9984b16ed17b3ee92de69f21f2c1d3f51ee9a3366b7f36758321ee3e516",
+      "optimizer.safetensors": "3b62ac70d2f05a43d80e0fdfc6f2f8f179b3f5a744cd9d458c25b4df0a7b2959"
+    },
+    "status": "running",
+    "last_step": {
+      "event": "train",
+      "step": 1805,
+      "valid_tokens": 57610054,
+      "batch_valid_tokens": 26663,
+      "nll": 4.242839298606683,
+      "router_aux": 0.9948895360015766,
+      "lr": 0.00039869516192245815,
+      "gradient_norm": 0.5402194261550903,
+      "seconds": 3.454678196,
+      "tokens_per_second": 7717.940279031419,
+      "peak_allocated_GiB": 109.37822103500366,
+      "peak_reserved_GiB": 110.251953125,
+      "retained_blocks": 8,
+      "optimized_execution": true,
+      "padding_fraction": 0.7472030491504854,
+      "unused_nominal_context_fraction": 0.7965774536132812,
+      "mean_expert_load": [
+        0.06401106715202332,
+        0.06220827251672745,
+        0.058742456138134,
+        0.06396845728158951,
+        0.0649452954530716,
+        0.05913795903325081,
+        0.06353288143873215,
+        0.06121523678302765,
+        0.0620088092982769,
+        0.05988124758005142,
+        0.06471003592014313,
+        0.060801826417446136,
+        0.06133712828159332,
+        0.06651198863983154,
+        0.06118369847536087,
+        0.0658036470413208
+      ]
+    }
+  },
+  "execution": {
+    "optimized_routing": true,
+    "fused_scan": true,
+    "retained_blocks": 8,
+    "deterministic": true,
+    "config_sha256": "9a209edb14f06ff20d9a24cb8bb80e6d1add431497c016158420b9a0355e94fa",
+    "data_sha256": "8752157d28651b5c25234a8c39a1474a7eab8700e2375016f88c76e5bc9ee96a",
+    "starting_step": 1500,
+    "starting_valid_tokens": 47811956
+  }
+}

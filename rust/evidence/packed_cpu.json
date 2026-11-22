@@ -1,0 +1,32 @@
+[
+  {
+    "case": "packed_cpu_0",
+    "bitwise_equal": true,
+    "elements": 3626
+  },
+  {
+    "case": "packed_cpu_0_draft",
+    "bitwise_equal": true,
+    "elements": 3108
+  },
+  {
+    "case": "packed_cpu_1",
+    "bitwise_equal": true,
+    "elements": 3626
+  },
+  {
+    "case": "packed_cpu_1_draft",
+    "bitwise_equal": true,
+    "elements": 3108
+  },
+  {
+    "case": "packed_cpu_2",
+    "bitwise_equal": true,
+    "elements": 3626
+  },
+  {
+    "case": "packed_cpu_2_draft",
+    "bitwise_equal": true,
+    "elements": 3108
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "ended_utc": "2026-11-03T00:42:04Z",
+  "reason": "Rust validation, pauses and shared CPU/I/O during migration",
+  "gpu_compute_used": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "gpus_0_through_3_touched": false,
+  "metric_policy": "Exclude historical Python timing intervals below from architecture-throughput claims. Use explicit ABBA measurements for implementation speed; preserve and report the runtime transition for quality curves.",
+  "excluded_ranges": [
+    {
+      "run": "cairn_1p3b_seed17_v1",
+      "from_step_inclusive": 0,
+      "through_step_inclusive": 1484,
+      "current_status": "superseded_by_rust"
+    },
+    {
+      "run": "gdn_h_recipe_proxy_1p3b_seed17_v1",
+      "from_step_inclusive": 0,
+      "through_step_inclusive": 1715,
+      "current_status": "superseded_by_rust"
+    },
+    {
+      "run": "kda_mla_operator_1p3b_seed17_v1",
+      "from_step_inclusive": 0,
+      "through_step_inclusive": 872,
+      "current_status": "superseded_by_rust"
+    },
+    {
+      "run": "gdn_gqa_1p3b_seed17_v1",
+      "from_step_inclusive": 0,
+      "through_step_inclusive": 1714,
+      "current_status": "superseded_by_rust"
+    }
+  ],
+  "retention_tuning_20261103": {
+    "evidence": "retention_170gib_20261103/summary.json",
+    "end_utc": "2026-11-03T01:26:27.574375+00:00",
+    "reason": "Saved-checkpoint pauses, separate retention probes, and shared host CPU/I/O during tuning",
+    "excluded_ranges": [
+      {
+        "run": "cairn_1p3b_seed17_v1",
+        "from_step_inclusive": 1272,
+        "through_step_inclusive": 1465
+      },
+      {
+        "run": "gdn_h_recipe_proxy_1p3b_seed17_v1",
+        "from_step_inclusive": 1800,
+        "through_step_inclusive": 1941
+      },
+      {
+        "run": "kda_mla_operator_1p3b_seed17_v1",
+        "from_step_inclusive": 649,
+        "through_step_inclusive": 697
+      },
+      {
+        "run": "gdn_gqa_1p3b_seed17_v1",
+        "from_step_inclusive": 1805,
+        "through_step_inclusive": 1950
+      }
+    ],
+    "gpus_0_through_3_touched": false,
+    "uncheckpointed_updates_lost": 0,
+    "policy": "Exclude these production timing windows from architecture throughput claims; use the separate matched comparisons for retention speedup."
+  }
+}

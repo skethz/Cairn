@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "checkpoint": "checkpoint_00001002",
+  "records": [
+    {
+      "file": "model.safetensors",
+      "tensors": 1465,
+      "bitwise_equal": 1465,
+      "differences": []
+    },
+    {
+      "file": "optimizer.safetensors",
+      "tensors": 4397,
+      "bitwise_equal": 4397,
+      "differences": []
+    },
+    {
+      "file": "final_gradients.safetensors",
+      "tensors": 1465,
+      "bitwise_equal": 1465,
+      "differences": []
+    }
+  ],
+  "metric_differences": []
+}

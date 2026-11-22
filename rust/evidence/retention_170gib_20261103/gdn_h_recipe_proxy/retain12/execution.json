@@ -1,0 +1,10 @@
+{
+  "optimized_routing": true,
+  "fused_scan": true,
+  "retained_blocks": 12,
+  "deterministic": true,
+  "config_sha256": "4a77d5c8795036581dafdf9049caf9b05d348b727d0f199c538aef2c7f110e4e",
+  "data_sha256": "8752157d28651b5c25234a8c39a1474a7eab8700e2375016f88c76e5bc9ee96a",
+  "starting_step": 1801,
+  "starting_valid_tokens": 57493115
+}

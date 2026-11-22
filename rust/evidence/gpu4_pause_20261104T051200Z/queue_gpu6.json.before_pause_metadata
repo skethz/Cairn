@@ -1,0 +1,17 @@
+{
+  "gpu": 6,
+  "status": "released_jobs_queued_on_gpu4",
+  "current": null,
+  "finished": [],
+  "resume": true,
+  "optimized": true,
+  "retained_blocks": 5,
+  "deterministic": true,
+  "fused_scan": true,
+  "moved_run": "kda_mla_operator_1p3b_seed17_v1",
+  "destination_gpu": 4,
+  "evidence": "/scratch/hongse/mythos/cairn-rust/evidence/queue_consolidation_20261104T020744Z",
+  "released_utc": "2026-11-04T02:10:00.079351+00:00",
+  "destination_scheduler_pid": 3071698,
+  "pending_schedule": "/scratch/hongse/mythos/cairn-rust/runs/queue_gpu4.pending.json"
+}

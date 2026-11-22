@@ -1,0 +1,70 @@
+{
+  "run_name": "cairn_rust_smoke",
+  "model": {
+    "family": "cairn",
+    "width": 64,
+    "layers": 4,
+    "vocab_size": 32000,
+    "gdn_heads": 4,
+    "gdn_key_dim": 8,
+    "gdn_value_dim": 16,
+    "gdn_chunk": 8,
+    "kda_chunk": 4,
+    "mla_heads": 4,
+    "mla_content_dim": 8,
+    "mla_rope_dim": 8,
+    "mla_value_dim": 16,
+    "mla_rank": 16,
+    "gqa_kv_heads": 2,
+    "experts": 4,
+    "top_k": 2,
+    "groups": 2,
+    "keep_groups": 1,
+    "expert_width": 32,
+    "dense_width": 128,
+    "activation_checkpointing": true
+  },
+  "training": {
+    "seed": 17,
+    "context": 64,
+    "microbatch": 2,
+    "accumulation": 2,
+    "peak_lr": 0.0004,
+    "clip": 1.0,
+    "router_coefficient": 0.01,
+    "router_aggregation": "valid-token-weighted mean of microbatch auxiliary losses",
+    "warmup_fraction": 0.02,
+    "valid_token_budget": 400,
+    "max_steps": 3,
+    "eval_every": 100,
+    "eval_batches": 1,
+    "checkpoint_every": 500,
+    "mtp_enabled": false,
+    "initialization": "SHA256(seed,module name) independent RNG; common named/shaped matrices identical across families",
+    "padding": "single-document rows, trim right padding to common multiple of 64, maximum context 4096",
+    "minimum_lr_fraction": 0.01,
+    "initial_checkpoint_step": 1
+  },
+  "data_directory": "/scratch/hongse/mythos/cairn-rust/evidence/smoke_data",
+  "parameter_count_interval": [
+    1,
+    10000000
+  ],
+  "scope": "Controlled from-scratch architecture study; common protocol. Not a reproduction of published 100B-token scores.",
+  "source_scale_references": [
+    "https://arxiv.org/html/2412.06464v3",
+    "https://arxiv.org/html/2605.22791v1"
+  ],
+  "training_variant": "FP32 master/optimizer state, BF16 matrix autocast, FP32 delta-state; MTP omitted",
+  "comparison": "same width/depth/experts/tokenizer/seed/token order; parameter differences reported, not equal-FLOP by assertion",
+  "prior_recipe_differences": [
+    "Independent 32K byte BPE instead of Llama2 tokenizer",
+    "1B-token initial controlled stage instead of 100B",
+    "2% warmup of this stage",
+    "Cairn reduced-expert geometry; not full original model",
+    "Shared reduced head dimensions across controls; not original head counts or state dimensions",
+    "Preserve dense FFNs at both boundaries, one initial and one terminal layer; 114-layer original has two initial and five terminal dense layers",
+    "131072 nominal token slots per update (32 document rows); valid target tokens vary with document lengths, rather than the published 0.5M-token batch"
+  ],
+  "network": "mandatory OS denial; no online mode"
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "case": "cpu_cairn",
+    "tensors": 1270,
+    "bitwise_equal": 1270,
+    "different": 0,
+    "failures": [],
+    "forward_differences": [],
+    "largest_differences": []
+  },
+  {
+    "case": "cpu_gdn_h_recipe_proxy",
+    "tensors": 1257,
+    "bitwise_equal": 1257,
+    "different": 0,
+    "failures": [],
+    "forward_differences": [],
+    "largest_differences": []
+  },
+  {
+    "case": "cpu_kda_mla_operator",
+    "tensors": 1270,
+    "bitwise_equal": 1270,
+    "different": 0,
+    "failures": [],
+    "forward_differences": [],
+    "largest_differences": []
+  },
+  {
+    "case": "cpu_gdn_gqa",
+    "tensors": 1231,
+    "bitwise_equal": 1231,
+    "different": 0,
+    "failures": [],
+    "forward_differences": [],
+    "largest_differences": []
+  },
+  {
+    "case": "cpu_full_mla",
+    "tensors": 1075,
+    "bitwise_equal": 1075,
+    "different": 0,
+    "failures": [],
+    "forward_differences": [],
+    "largest_differences": []
+  },
+  {
+    "case": "cpu_dense_gqa",
+    "tensors": 529,
+    "bitwise_equal": 529,
+    "different": 0,
+    "failures": [],
+    "forward_differences": [],
+    "largest_differences": []
+  }
+]

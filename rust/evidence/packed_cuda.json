@@ -1,0 +1,32 @@
+[
+  {
+    "case": "packed_cuda_0",
+    "bitwise_equal": true,
+    "elements": 3626
+  },
+  {
+    "case": "packed_cuda_0_draft",
+    "bitwise_equal": true,
+    "elements": 3108
+  },
+  {
+    "case": "packed_cuda_1",
+    "bitwise_equal": true,
+    "elements": 3626
+  },
+  {
+    "case": "packed_cuda_1_draft",
+    "bitwise_equal": true,
+    "elements": 3108
+  },
+  {
+    "case": "packed_cuda_2",
+    "bitwise_equal": true,
+    "elements": 3626
+  },
+  {
+    "case": "packed_cuda_2_draft",
+    "bitwise_equal": true,
+    "elements": 3108
+  }
+]

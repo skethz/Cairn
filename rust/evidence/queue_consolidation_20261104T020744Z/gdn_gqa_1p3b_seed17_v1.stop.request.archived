@@ -1,0 +1,1 @@
+Authorized GPU consolidation: save the completed update and release GPUs 5-7; resume on GPU 4 after Cairn completes. Evidence: /scratch/hongse/mythos/cairn-rust/evidence/queue_consolidation_20261104T020744Z

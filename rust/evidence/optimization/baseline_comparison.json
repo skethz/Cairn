@@ -1,0 +1,46 @@
+{
+  "scope": "same GPU4 and checkpoint; other GPUs active; exclude first two updates",
+  "differences": {
+    "nll": [
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008
+    ],
+    "gradient_norm": [
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008
+    ],
+    "router_aux": [
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008
+    ],
+    "valid_tokens": [],
+    "lr": [],
+    "mean_expert_load": [
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008
+    ]
+  },
+  "median_python_seconds": 7.8631872535916045,
+  "median_rust_seconds": 7.510343882000001
+}

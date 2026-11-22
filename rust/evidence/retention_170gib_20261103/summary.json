@@ -1,0 +1,469 @@
+{
+  "status": "passed_and_training",
+  "target_device_GiB": 170,
+  "release": "/scratch/hongse/mythos/cairn-rust/releases/20261103-v4",
+  "worker_sha256": "d2286b751d25d5d8e8ccb47adc762719d982569f1b974611d3796e90de3e97dd",
+  "same_worker_as_previous_release": true,
+  "scope": "Four active models. Queued Dense GQA and Full MLA keep their prior 8/4 block settings.",
+  "uncheckpointed_updates_lost": 0,
+  "all_four_workers_progressing": true,
+  "total_exact_tensors": 29548,
+  "runs": [
+    {
+      "family": "cairn",
+      "gpu": 4,
+      "worker_pid": 27760,
+      "memory": {
+        "total_GiB": 179.0615234375,
+        "used_GiB": 168.796875,
+        "free_GiB": 9.5947265625
+      },
+      "observed_peak_device_GiB": 168.796875,
+      "decision": {
+        "family": "cairn",
+        "gpu": 4,
+        "retained_blocks": 14,
+        "target_device_GiB": 170,
+        "conservative_peak_GiB": 168.677734375,
+        "baseline_tokens_per_second": 6279.757345666047,
+        "optimized_tokens_per_second": 6835.085574329883,
+        "throughput_ratio": 1.0884314788129663,
+        "measured_updates_per_setting": 16,
+        "comparison": {
+          "status": "passed",
+          "checkpoint": "checkpoint_00001283",
+          "updates": 10,
+          "files": [
+            {
+              "file": "model.safetensors",
+              "tensors": 1483,
+              "byte_identical": true,
+              "hashes": [
+                "80b32a93d708007ff1866545148536e4e827a31d02eecf9f6d4672705e2442fb",
+                "80b32a93d708007ff1866545148536e4e827a31d02eecf9f6d4672705e2442fb"
+              ],
+              "hash_source": "frozen_worker_checkpoint_save"
+            },
+            {
+              "file": "optimizer.safetensors",
+              "tensors": 4451,
+              "byte_identical": true,
+              "hashes": [
+                "2e116461f601b2d3ecc0a0b2a5fe46161455ab25f2b703d9c921ef86212090ed",
+                "2e116461f601b2d3ecc0a0b2a5fe46161455ab25f2b703d9c921ef86212090ed"
+              ],
+              "hash_source": "frozen_worker_checkpoint_save"
+            },
+            {
+              "file": "final_gradients.safetensors",
+              "tensors": 1483,
+              "byte_identical": true,
+              "hashes": [
+                "4f31a282f71eff05328b1698a8fd1230c4e14d12feeefafbf187764a719afcf1",
+                "4f31a282f71eff05328b1698a8fd1230c4e14d12feeefafbf187764a719afcf1"
+              ],
+              "hash_source": "computed_now"
+            }
+          ],
+          "tensors": 7417,
+          "differences": []
+        },
+        "all_40_update_metrics_identical": true,
+        "source_checkpoint": "checkpoint_00001273",
+        "source_valid_tokens": 40471737,
+        "uncheckpointed_updates_lost": 0,
+        "command": [
+          "/scratch/hongse/mythos/cairn-rust/releases/20261103-v4/bin/cairn-control",
+          "queue",
+          "/scratch/hongse/mythos/cairn-rust/runs",
+          "4",
+          "--resume",
+          "--optimized",
+          "--fused-scan",
+          "--deterministic",
+          "--retained-blocks",
+          "14",
+          "/scratch/hongse/mythos/cairn-rust/releases/20261103-v4/configs/cairn_1p3b.json"
+        ],
+        "resumed_utc": "2026-11-03T01:13:42.090592+00:00",
+        "status": "running_verified",
+        "controller_pid": 27746,
+        "verified_utc": "2026-11-03T01:26:27.574375+00:00"
+      }
+    },
+    {
+      "family": "gdn_h_recipe_proxy",
+      "gpu": 5,
+      "worker_pid": 32377,
+      "memory": {
+        "total_GiB": 179.0615234375,
+        "used_GiB": 166.07421875,
+        "free_GiB": 12.3173828125
+      },
+      "observed_peak_device_GiB": 166.07421875,
+      "decision": {
+        "family": "gdn_h_recipe_proxy",
+        "gpu": 5,
+        "retained_blocks": 14,
+        "target_device_GiB": 170,
+        "conservative_peak_GiB": 165.970703125,
+        "baseline_tokens_per_second": 6152.371350011241,
+        "optimized_tokens_per_second": 6727.105884235557,
+        "throughput_ratio": 1.0934167496608063,
+        "measured_updates_per_setting": 16,
+        "comparison": {
+          "status": "passed",
+          "checkpoint": "checkpoint_00001811",
+          "updates": 10,
+          "files": [
+            {
+              "file": "model.safetensors",
+              "tensors": 1477,
+              "byte_identical": true,
+              "hashes": [
+                "ae2ffad108bef5edfa60ee2c2f022345c32f7683d9f608baf96f0994897b2a0c",
+                "ae2ffad108bef5edfa60ee2c2f022345c32f7683d9f608baf96f0994897b2a0c"
+              ],
+              "hash_source": "frozen_worker_checkpoint_save"
+            },
+            {
+              "file": "optimizer.safetensors",
+              "tensors": 4433,
+              "byte_identical": true,
+              "hashes": [
+                "111f0a44c7c5b06973b20485204b79513227c6d4085e4a5f1ce74dfc990a4fcc",
+                "111f0a44c7c5b06973b20485204b79513227c6d4085e4a5f1ce74dfc990a4fcc"
+              ],
+              "hash_source": "frozen_worker_checkpoint_save"
+            },
+            {
+              "file": "final_gradients.safetensors",
+              "tensors": 1477,
+              "byte_identical": true,
+              "hashes": [
+                "df6dcc52cdefe202add858a6a432c12b8248ee5e09d5bfe96a20a031b28ad6e2",
+                "df6dcc52cdefe202add858a6a432c12b8248ee5e09d5bfe96a20a031b28ad6e2"
+              ],
+              "hash_source": "computed_now"
+            }
+          ],
+          "tensors": 7387,
+          "differences": []
+        },
+        "all_40_update_metrics_identical": true,
+        "source_checkpoint": "checkpoint_00001801",
+        "source_valid_tokens": 57493115,
+        "uncheckpointed_updates_lost": 0,
+        "command": [
+          "/scratch/hongse/mythos/cairn-rust/releases/20261103-v4/bin/cairn-control",
+          "queue",
+          "/scratch/hongse/mythos/cairn-rust/runs",
+          "5",
+          "--resume",
+          "--optimized",
+          "--fused-scan",
+          "--deterministic",
+          "--retained-blocks",
+          "14",
+          "/scratch/hongse/mythos/cairn-rust/releases/20261103-v4/configs/gdn_h_recipe_proxy_1p3b.json",
+          "/scratch/hongse/mythos/cairn-rust/releases/20261103-v4/configs/dense_gqa_1p3b.json"
+        ],
+        "resumed_utc": "2026-11-03T01:16:57.858925+00:00",
+        "status": "running_verified",
+        "controller_pid": 32364,
+        "verified_utc": "2026-11-03T01:26:27.574375+00:00"
+      }
+    },
+    {
+      "family": "kda_mla_operator",
+      "gpu": 6,
+      "worker_pid": 35752,
+      "memory": {
+        "total_GiB": 179.0615234375,
+        "used_GiB": 170.498046875,
+        "free_GiB": 7.8935546875
+      },
+      "observed_peak_device_GiB": 170.498046875,
+      "decision": {
+        "family": "kda_mla_operator",
+        "gpu": 6,
+        "retained_blocks": 5,
+        "target_device_GiB": 170,
+        "conservative_peak_GiB": 169.8671875,
+        "baseline_tokens_per_second": 3554.72189184376,
+        "optimized_tokens_per_second": 3681.3500301183026,
+        "throughput_ratio": 1.0356225162269623,
+        "measured_updates_per_setting": 16,
+        "comparison": {
+          "status": "passed",
+          "checkpoint": "checkpoint_00000660",
+          "updates": 10,
+          "files": [
+            {
+              "file": "model.safetensors",
+              "tensors": 1483,
+              "byte_identical": true,
+              "hashes": [
+                "604c0f46b195f0eb38839ee7e7ab488412b994f81b6fb49db3d0b85362472144",
+                "604c0f46b195f0eb38839ee7e7ab488412b994f81b6fb49db3d0b85362472144"
+              ],
+              "hash_source": "frozen_worker_checkpoint_save"
+            },
+            {
+              "file": "optimizer.safetensors",
+              "tensors": 4451,
+              "byte_identical": true,
+              "hashes": [
+                "3254a6e15d392e8dff0d49eff06d5fee06a5ffbe94604dc3d5687e535f835123",
+                "3254a6e15d392e8dff0d49eff06d5fee06a5ffbe94604dc3d5687e535f835123"
+              ],
+              "hash_source": "frozen_worker_checkpoint_save"
+            },
+            {
+              "file": "final_gradients.safetensors",
+              "tensors": 1483,
+              "byte_identical": true,
+              "hashes": [
+                "75ba80880426fe2052b9c9b931065dc697a69ba2133e13263327c99fc8918775",
+                "75ba80880426fe2052b9c9b931065dc697a69ba2133e13263327c99fc8918775"
+              ],
+              "hash_source": "computed_now"
+            }
+          ],
+          "tensors": 7417,
+          "differences": []
+        },
+        "all_40_update_metrics_identical": true,
+        "source_checkpoint": "checkpoint_00000650",
+        "source_valid_tokens": 20719704,
+        "uncheckpointed_updates_lost": 0,
+        "command": [
+          "/scratch/hongse/mythos/cairn-rust/releases/20261103-v4/bin/cairn-control",
+          "queue",
+          "/scratch/hongse/mythos/cairn-rust/runs",
+          "6",
+          "--resume",
+          "--optimized",
+          "--fused-scan",
+          "--deterministic",
+          "--retained-blocks",
+          "5",
+          "/scratch/hongse/mythos/cairn-rust/releases/20261103-v4/configs/kda_mla_operator_1p3b.json"
+        ],
+        "resumed_utc": "2026-11-03T01:19:34.428386+00:00",
+        "status": "running_verified",
+        "controller_pid": 35711,
+        "verified_utc": "2026-11-03T01:26:27.574375+00:00"
+      }
+    },
+    {
+      "family": "gdn_gqa",
+      "gpu": 7,
+      "worker_pid": 32379,
+      "memory": {
+        "total_GiB": 179.0615234375,
+        "used_GiB": 168.185546875,
+        "free_GiB": 10.2060546875
+      },
+      "observed_peak_device_GiB": 168.185546875,
+      "decision": {
+        "family": "gdn_gqa",
+        "gpu": 7,
+        "retained_blocks": 14,
+        "target_device_GiB": 170,
+        "conservative_peak_GiB": 168.3125,
+        "baseline_tokens_per_second": 6437.922122194279,
+        "optimized_tokens_per_second": 6985.473336286274,
+        "throughput_ratio": 1.085050922285057,
+        "measured_updates_per_setting": 16,
+        "comparison": {
+          "status": "passed",
+          "checkpoint": "checkpoint_00001816",
+          "updates": 10,
+          "files": [
+            {
+              "file": "model.safetensors",
+              "tensors": 1465,
+              "byte_identical": true,
+              "hashes": [
+                "7a23b5f61f872d4ce5db91a8351cd5b44f53f7d647caa7548e5ee6cf9228352a",
+                "7a23b5f61f872d4ce5db91a8351cd5b44f53f7d647caa7548e5ee6cf9228352a"
+              ],
+              "hash_source": "frozen_worker_checkpoint_save"
+            },
+            {
+              "file": "optimizer.safetensors",
+              "tensors": 4397,
+              "byte_identical": true,
+              "hashes": [
+                "8ae1bd59738c640f295a63747a29823c647c425ac3cc2d6a2d3f9381d003206e",
+                "8ae1bd59738c640f295a63747a29823c647c425ac3cc2d6a2d3f9381d003206e"
+              ],
+              "hash_source": "frozen_worker_checkpoint_save"
+            },
+            {
+              "file": "final_gradients.safetensors",
+              "tensors": 1465,
+              "byte_identical": true,
+              "hashes": [
+                "d594f1c0b561d1788d3f81be88103a8a5a03cb3b2656ed1c5f0d7005f56ed2dc",
+                "d594f1c0b561d1788d3f81be88103a8a5a03cb3b2656ed1c5f0d7005f56ed2dc"
+              ],
+              "hash_source": "computed_now"
+            }
+          ],
+          "tensors": 7327,
+          "differences": []
+        },
+        "all_40_update_metrics_identical": true,
+        "source_checkpoint": "checkpoint_00001806",
+        "source_valid_tokens": 57642070,
+        "uncheckpointed_updates_lost": 0,
+        "command": [
+          "/scratch/hongse/mythos/cairn-rust/releases/20261103-v4/bin/cairn-control",
+          "queue",
+          "/scratch/hongse/mythos/cairn-rust/runs",
+          "7",
+          "--resume",
+          "--optimized",
+          "--fused-scan",
+          "--deterministic",
+          "--retained-blocks",
+          "14",
+          "/scratch/hongse/mythos/cairn-rust/releases/20261103-v4/configs/gdn_gqa_1p3b.json",
+          "/scratch/hongse/mythos/cairn-rust/releases/20261103-v4/configs/full_mla_1p3b.json"
+        ],
+        "resumed_utc": "2026-11-03T01:16:57.908861+00:00",
+        "status": "running_verified",
+        "controller_pid": 32368,
+        "verified_utc": "2026-11-03T01:26:27.574375+00:00"
+      }
+    }
+  ],
+  "eta": {
+    "as_of_utc": "2026-11-03T01:26:27.574375+00:00",
+    "timezone": "Europe/Zurich",
+    "valid_token_budget_per_model": 1000000000,
+    "method": "Pool last up to 200 prior Rust updates, adjusted by measured retention speedup, with up to 200 new updates. Exclude first two warmup updates per regime. Add a stated 10% allowance for periodic validation/checkpoint overhead. Planning ranges are not statistical confidence intervals.",
+    "limitations": "Final held-out evaluation/benchmarks and queue handoff evaluation time are unmeasured and excluded. Queued models have only 10 measured updates. Future host contention and batch distribution may change throughput.",
+    "active": [
+      {
+        "family": "cairn",
+        "gpu": 4,
+        "valid_tokens": 46709249,
+        "remaining_tokens": 953290751,
+        "progress_fraction": 0.046709249,
+        "old_updates": 200,
+        "new_updates": 190,
+        "predicted_training_tokens_per_second": 9149.844068296075,
+        "recent_observed_wall_throughput": {
+          "seconds": 307.706259,
+          "valid_tokens": 2778275,
+          "tokens_per_second": 9028.984360048393
+        },
+        "training_hours_remaining": 31.834781320161,
+        "planning_range_hours": [
+          27.059564122136848,
+          36.609998518185144
+        ],
+        "estimated_training_finish_local": "2026-11-04T10:16:32.787128+01:00"
+      },
+      {
+        "family": "gdn_h_recipe_proxy",
+        "gpu": 5,
+        "valid_tokens": 61862063,
+        "remaining_tokens": 938137937,
+        "progress_fraction": 0.061862063,
+        "old_updates": 200,
+        "new_updates": 138,
+        "predicted_training_tokens_per_second": 9183.901723522278,
+        "recent_observed_wall_throughput": {
+          "seconds": 307.706259,
+          "valid_tokens": 2639935,
+          "tokens_per_second": 8579.399745001612
+        },
+        "training_hours_remaining": 31.212579049445495,
+        "planning_range_hours": [
+          26.53069219202867,
+          35.894465906862315
+        ],
+        "estimated_training_finish_local": "2026-11-04T09:39:12.858953+01:00"
+      },
+      {
+        "family": "kda_mla_operator",
+        "gpu": 6,
+        "valid_tokens": 22187909,
+        "remaining_tokens": 977812091,
+        "progress_fraction": 0.022187909,
+        "old_updates": 148,
+        "new_updates": 45,
+        "predicted_training_tokens_per_second": 4305.488131465124,
+        "recent_observed_wall_throughput": {
+          "seconds": 148.672624,
+          "valid_tokens": 558443,
+          "tokens_per_second": 3756.1925321234658
+        },
+        "training_hours_remaining": 69.39420283404041,
+        "planning_range_hours": [
+          58.98507240893435,
+          79.80333325914647
+        ],
+        "estimated_training_finish_local": "2026-11-05T23:50:06.704578+01:00"
+      },
+      {
+        "family": "gdn_gqa",
+        "gpu": 7,
+        "valid_tokens": 62151767,
+        "remaining_tokens": 937848233,
+        "progress_fraction": 0.062151767,
+        "old_updates": 200,
+        "new_updates": 142,
+        "predicted_training_tokens_per_second": 9372.607244337898,
+        "recent_observed_wall_throughput": {
+          "seconds": 307.706259,
+          "valid_tokens": 2727772,
+          "tokens_per_second": 8864.857051867768
+        },
+        "training_hours_remaining": 30.57470887134722,
+        "planning_range_hours": [
+          25.988502540645136,
+          35.1609152020493
+        ],
+        "estimated_training_finish_local": "2026-11-04T09:00:56.526312+01:00"
+      }
+    ],
+    "queued": [
+      {
+        "family": "dense_gqa",
+        "gpu": 5,
+        "predecessor": "gdn_h_recipe_proxy",
+        "retained_blocks": 8,
+        "profile_valid_tokens_per_second": 14361.668573461384,
+        "profile_measured_updates": 10,
+        "training_duration_hours": 21.27576987260276,
+        "training_completion_hours_from_now": 52.48834892204825,
+        "planning_range_hours_from_now": [
+          42.48751959648074,
+          62.48917824761576
+        ],
+        "estimated_training_finish_local": "2026-11-05T06:55:45.630494+01:00"
+      },
+      {
+        "family": "full_mla",
+        "gpu": 7,
+        "predecessor": "gdn_gqa",
+        "retained_blocks": 4,
+        "profile_valid_tokens_per_second": 7388.062065789844,
+        "profile_measured_updates": 10,
+        "training_duration_hours": 41.35801145613267,
+        "training_completion_hours_from_now": 71.9327203274799,
+        "planning_range_hours_from_now": [
+          57.00701113274464,
+          86.85842952221515
+        ],
+        "estimated_training_finish_local": "2026-11-06T02:22:25.367554+01:00"
+      }
+    ],
+    "all_training_completion_hours_from_now": 71.9327203274799
+  }
+}

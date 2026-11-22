@@ -1,0 +1,11 @@
+{
+  "gpu": 6,
+  "status": "running",
+  "current": "kda_mla_operator_1p3b_seed17_v1",
+  "finished": [],
+  "resume": true,
+  "optimized": true,
+  "retained_blocks": 5,
+  "deterministic": true,
+  "fused_scan": true
+}

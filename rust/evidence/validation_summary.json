@@ -1,0 +1,356 @@
+{
+  "status": "passed",
+  "recorded_utc": "2026-11-02T23:41:53.098344+00:00",
+  "runtime_language": "Rust application/model/training logic; thin C++ backend interop; LibTorch 2.11.0/CUDA12.8",
+  "python_runtime_required": false,
+  "original_repository_code_or_weights_executed": false,
+  "source_sha256": {
+    "Cargo.lock": "23362a0e11ebf29e2cbee8230d9473499f2ef4e8357d82df128997ea9ff43510",
+    "Cargo.toml": "aead5a19a8ae248900941ca6bb3c2b491650763712a4919a619554ded0ed820e",
+    "build.rs": "424e3f5e70035f590bd8be426e6ab0a42700e457b4c121c4a3069fe483284c40",
+    "native/bridge.cpp": "d228c4bb4f13eabba4079d119be211b0849dbe7641b156a776ad4ec3bcae629b",
+    "src/benchmarks.rs": "f7e9185926200baa8af65749aa2ef95f2a447c6dd3c5fa57420ccef3ce9e2bc9",
+    "src/bin/control.rs": "3970f149f95ef114075a24b1072d442b12d7dc0751e26ed102ad4ddd970df347",
+    "src/bin/launch.rs": "b3c2444b59d58ca7d5d8b3561008d86f02bad1076e28417afa81d50ff17cea88",
+    "src/checkpoint.rs": "d95221ddaf8bc7fb357885f8a0352a584956954ef8d230f34dd4560c10c2e926",
+    "src/data.rs": "d9ec6cbbf0d480487a5a96a65f100beaa6c150774960bcf0f8c1a3ad0074c9b9",
+    "src/io.rs": "7b73ed7b110621e52a8e27ce5e7b5720cd3735f666a85feb1926905c119e4269",
+    "src/isolation.rs": "74c3e0709d9574964f2ee3ededf88db83a1bcdd1f4bb80ae9ed4218a86da4ff4",
+    "src/main.rs": "bc30306f46c55652a8aa946ce4c881c0b8438688502572ed6c79dfdcf2ba79ae",
+    "src/model.rs": "595365870e5b17b2f5140ca101f1c21fa873ed83e13166c5757182f21f807994",
+    "src/native.rs": "14900d14f6bf2028530a92cf0e8e4601bec37ef2dc15260108e60a32543d57bc",
+    "src/optimizer.rs": "85d800499e8bc1da04f5af8277502f9091da9a2d3d0bf99cfb4c068b87352b3e",
+    "src/packed.rs": "c4b2b4f666225185c380e5017c7100f4b01781aa23c74f6e29d55233cd1b40c5",
+    "src/prepare.rs": "cd43f45ee9072869ab3bdcebd85c9cc8dc0d4e323f8fdebc9de3759a39afd1c5",
+    "src/recurrence.rs": "458cf551cf25d82fa721b43c6568556d68f20b0508595b0b775b32a83efccc8f",
+    "src/tokenizer.rs": "d391022f0d9f55eb2c34b58571d7a8f97dc057b72be14adfce64c61c42ba461e",
+    "src/trainer.rs": "ae0b9727d01d5c943b865a0f2131e04919f64371ef4759887f4b6fba5f94a41e",
+    "src/verification.rs": "311599b4db89fea48ae46ee93210167ca9fdfd8aa18a162744f32c3851b161c6"
+  },
+  "binary_sha256": {
+    "cairn": "2d1990efd36bd6fc99ae82bace9a07e18b805ac8329cb966ada703883d47ab73",
+    "cairn-run": "ea8a09ddeca693c2c4988aafa4313e8a7aa5f622e9a7bdfed9d8b46fea965c35",
+    "cairn-control": "5f0f2568e00ec066fa34fcc88bc67e85cfa902542df8a3d5fa75332666a3597b"
+  },
+  "training_model_cases": {
+    "comparison_cpu_rust": {
+      "cases": 6,
+      "compared_tensors": 6632,
+      "bitwise_equal": 6632
+    },
+    "comparison_cpu_recompute": {
+      "cases": 6,
+      "compared_tensors": 6632,
+      "bitwise_equal": 6632
+    },
+    "comparison_cuda_rust": {
+      "cases": 6,
+      "compared_tensors": 6632,
+      "bitwise_equal": 6632
+    },
+    "comparison_cuda_recompute": {
+      "cases": 6,
+      "compared_tensors": 6632,
+      "bitwise_equal": 6632
+    },
+    "comparison_cpu_resume": {
+      "cases": 6,
+      "compared_tensors": 6632,
+      "bitwise_equal": 6632
+    },
+    "comparison_cuda_resume": {
+      "cases": 1,
+      "compared_tensors": 1270,
+      "bitwise_equal": 1270
+    },
+    "comparison_cpu_recompute_t769": {
+      "cases": 1,
+      "compared_tensors": 1270,
+      "bitwise_equal": 1270
+    }
+  },
+  "fullscale": {
+    "case": {
+      "source_checkpoint": "/scratch/hongse/mythos/cairn-training/runs/cairn_1p3b_seed17_v1/checkpoint_00000500/model.safetensors",
+      "parameters": 1320163008,
+      "tensors": 1487,
+      "shape": [
+        1,
+        65
+      ],
+      "source": "Our independently trained Cairn checkpoint; no original repository weights"
+    },
+    "result": {
+      "status": "passed",
+      "tensors": 1487,
+      "bitwise_equal": 1487,
+      "failures": [],
+      "largest_differences": []
+    }
+  },
+  "end_to_end_training": {
+    "status": "passed",
+    "checkpoints": [
+      {
+        "step": 1,
+        "file": "model",
+        "tensors": 96,
+        "unequal": []
+      },
+      {
+        "step": 1,
+        "file": "optimizer",
+        "tensors": 290,
+        "unequal": []
+      },
+      {
+        "step": 2,
+        "file": "model",
+        "tensors": 96,
+        "unequal": []
+      },
+      {
+        "step": 2,
+        "file": "optimizer",
+        "tensors": 290,
+        "unequal": []
+      }
+    ],
+    "training_metrics_equal": true,
+    "valid_tokens": 400,
+    "coverage": "real corpus slice, BF16, two microbatches, partial final-token budget, validation/test, model+optimizer+CPU/CUDA RNG checkpoints"
+  },
+  "python_to_rust_resume": {
+    "status": "passed",
+    "checkpoints": [
+      {
+        "step": 1,
+        "file": "model",
+        "tensors": 96,
+        "unequal": []
+      },
+      {
+        "step": 1,
+        "file": "optimizer",
+        "tensors": 290,
+        "unequal": []
+      },
+      {
+        "step": 2,
+        "file": "model",
+        "tensors": 96,
+        "unequal": []
+      },
+      {
+        "step": 2,
+        "file": "optimizer",
+        "tensors": 290,
+        "unequal": []
+      }
+    ],
+    "training_metrics_equal": true,
+    "valid_tokens": 400,
+    "coverage": "real corpus slice, BF16, two microbatches, partial final-token budget, validation/test, model+optimizer+CPU/CUDA RNG checkpoints"
+  },
+  "data_tokenizer_recurrence": {
+    "cpu": {
+      "status": "passed",
+      "device": "cpu",
+      "dataset_batches": 6,
+      "unicode_tokenizer_texts": 8,
+      "byte_bpe_training_and_roundtrip": true,
+      "continuation_boundary": true,
+      "recurrence_tensors": 64,
+      "recurrence_reference": "sequential update; scalar/channel decay; nonzero initial state; lengths not divisible by chunk; all input gradients"
+    },
+    "cuda": {
+      "status": "passed",
+      "device": "cuda",
+      "dataset_batches": 6,
+      "unicode_tokenizer_texts": 8,
+      "byte_bpe_training_and_roundtrip": true,
+      "continuation_boundary": true,
+      "recurrence_tensors": 64,
+      "recurrence_reference": "sequential update; scalar/channel decay; nonzero initial state; lengths not divisible by chunk; all input gradients"
+    }
+  },
+  "packed_inference": {
+    "cpu": [
+      {
+        "case": "packed_cpu_0",
+        "bitwise_equal": true,
+        "elements": 3626
+      },
+      {
+        "case": "packed_cpu_0_draft",
+        "bitwise_equal": true,
+        "elements": 3108
+      },
+      {
+        "case": "packed_cpu_1",
+        "bitwise_equal": true,
+        "elements": 3626
+      },
+      {
+        "case": "packed_cpu_1_draft",
+        "bitwise_equal": true,
+        "elements": 3108
+      },
+      {
+        "case": "packed_cpu_2",
+        "bitwise_equal": true,
+        "elements": 3626
+      },
+      {
+        "case": "packed_cpu_2_draft",
+        "bitwise_equal": true,
+        "elements": 3108
+      }
+    ],
+    "cuda": [
+      {
+        "case": "packed_cuda_0",
+        "bitwise_equal": true,
+        "elements": 3626
+      },
+      {
+        "case": "packed_cuda_0_draft",
+        "bitwise_equal": true,
+        "elements": 3108
+      },
+      {
+        "case": "packed_cuda_1",
+        "bitwise_equal": true,
+        "elements": 3626
+      },
+      {
+        "case": "packed_cuda_1_draft",
+        "bitwise_equal": true,
+        "elements": 3108
+      },
+      {
+        "case": "packed_cuda_2",
+        "bitwise_equal": true,
+        "elements": 3626
+      },
+      {
+        "case": "packed_cuda_2_draft",
+        "bitwise_equal": true,
+        "elements": 3108
+      }
+    ]
+  },
+  "benchmark_preparation": [
+    {
+      "task": "arc_challenge.jsonl",
+      "examples": 1172,
+      "semantic_equality": true
+    },
+    {
+      "task": "boolq.jsonl",
+      "examples": 3270,
+      "semantic_equality": true
+    },
+    {
+      "task": "piqa.jsonl",
+      "examples": 1838,
+      "semantic_equality": true
+    }
+  ],
+  "parameter_counts": [
+    {
+      "config": "cairn_1p3b.json",
+      "parameters": 1320163008,
+      "matches_python": true
+    },
+    {
+      "config": "cairn_400m.json",
+      "parameters": 385379616,
+      "matches_python": true
+    },
+    {
+      "config": "dense_gqa_1p3b.json",
+      "parameters": 1298237440,
+      "matches_python": true
+    },
+    {
+      "config": "dense_gqa_400m.json",
+      "parameters": 392741888,
+      "matches_python": true
+    },
+    {
+      "config": "full_mla_1p3b.json",
+      "parameters": 1302033408,
+      "matches_python": true
+    },
+    {
+      "config": "full_mla_400m.json",
+      "parameters": 378600192,
+      "matches_python": true
+    },
+    {
+      "config": "gdn_gqa_1p3b.json",
+      "parameters": 1322814144,
+      "matches_python": true
+    },
+    {
+      "config": "gdn_gqa_400m.json",
+      "parameters": 386361120,
+      "matches_python": true
+    },
+    {
+      "config": "gdn_h_recipe_proxy_1p3b.json",
+      "parameters": 1313871552,
+      "matches_python": true
+    },
+    {
+      "config": "gdn_h_recipe_proxy_400m.json",
+      "parameters": 383020320,
+      "matches_python": true
+    },
+    {
+      "config": "kda_mla_operator_1p3b.json",
+      "parameters": 1329323136,
+      "matches_python": true
+    },
+    {
+      "config": "kda_mla_operator_400m.json",
+      "parameters": 388816896,
+      "matches_python": true
+    }
+  ],
+  "cpu_timing": {
+    "python_median_seconds": 0.04520242102444172,
+    "rust_median_seconds": 0.030567574,
+    "throughput_ratio": 1.4787703147276823,
+    "loss_trajectory_exact": true,
+    "scope": "small-model pilot on shared host; not an isolated 1.3B GPU speed claim"
+  },
+  "security": {
+    "dependencies": {
+      "no_python_linkage": true,
+      "launcher_and_controller_do_not_link_libtorch": true,
+      "no_hub_http_or_download_features": true,
+      "worker_backend": "LibTorch 2.11.0 / CUDA 12.8"
+    },
+    "os_denial_checks": [
+      "IPv4 socket",
+      "IPv6 socket",
+      "AF_PACKET socket",
+      "post-initialization UNIX connect",
+      "UNIX bind",
+      "execve",
+      "io_uring_setup"
+    ],
+    "os_denial_cpu_and_cuda_passed": true,
+    "occupied_gpu_refusal_passed": true,
+    "packed_allocation_guard_passed": true
+  },
+  "limitations": [
+    "Linux/B200 runtime verified; macOS execution deliberately refused without a supported OS boundary",
+    "Fullscale test uses [1,65], not a proof of all 4096-token trajectories",
+    "Entire corpus/BPE regeneration equivalence not established; frozen corpus/tokenizer reused",
+    "No isolated fullscale GPU speed or peak-memory advantage established",
+    "Original Python corpus runs continue; do not compare throughput during the recorded interference interval"
+  ]
+}
