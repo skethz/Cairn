@@ -1,4 +1,4 @@
-# Cairn: A Hybrid Recurrent–Attention Language Model
+# Cairn: Rust Implementation of a Hybrid Recurrent–Attention Language Model
 
 Rust implementation of **Cairn**, a decoder-only language model combining recurrent sequence processing, periodic attention, and sparse mixture-of-experts feed-forward layers. This repository contains the current implementation, controlled-study configurations, and stored implementation-validation records.
 
